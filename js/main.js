@@ -302,7 +302,7 @@ function loadEditPropertyComponent(meta) {
         $('select.selectpicker').selectpicker({
             caretIcon: 'glyphicon glyphicon-menu-down'
         });
-    }, 100)
+    }, 500)
 
 
 }
@@ -326,7 +326,7 @@ function loadEditGroupComponent(meta) {
         $('select.selectpicker').selectpicker({
             caretIcon: 'glyphicon glyphicon-menu-down'
         });
-    }, 100)
+    }, 500)
 
 
 }
