@@ -39,8 +39,7 @@
             <div class="edit-left-nav-section">
                 <div class="tab">
                     <a href="{{path}}details" class="tablinks" onclick="openTab(event, 'Details')">Details</a>
-                    <a href="{{path}}translation" class="tablinks"
-                       onclick="openTab(event, 'Translations')">Translations</a>
+                    <a href="{{path}}translation" class="tablinks" onclick="openTab(event, 'Translations')">Translations</a>
                     <a href="{{path}}properties" class="tablinks" onclick="openTab(event, 'Properties')">Properties</a>
                     <a href="{{path}}history" class="tablinks" onclick="openTab(event, 'History')">History</a>
                 </div>
