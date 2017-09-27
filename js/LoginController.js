@@ -37,6 +37,12 @@ let LoginManager = function () {
             headerName: "pp@unbxd.com",
             password: "zaq12wsx",
             roles: ["ADMIN"]
+        },
+        {
+            userName: "pimento@unbxd.com",
+            headerName: "pimento@unbxd.com",
+            password: "zaq12wsx",
+            roles: ["ADMIN"]
         }
     ];
     logInUser = function (userObj) {
