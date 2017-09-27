@@ -241,6 +241,10 @@ function loadEditPropertyComponent() {
     setTabHighlight(3, ".header-container .navbar-menu");
     setTimeout(function () {
         $(".edit-left-nav-section .tablinks:nth-child(1)").click();
+        $('.toggle-trigger').bootstrapToggle();
+        $('select.selectpicker').selectpicker({
+            caretIcon: 'glyphicon glyphicon-menu-down'
+        });
     },100)
 
 

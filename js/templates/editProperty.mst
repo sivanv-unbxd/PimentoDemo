@@ -46,12 +46,96 @@
 
         <div class="col-md-10 edit-container">
             <div id="Details" class="tabcontent">
-                <h3>London</h3>
-                <p>London is the capital city of England.</p>
+                <div class="title">
+                    Details
+                </div>
+                <div class="input-component">
+                    <div class="input-label">Property Name</div>
+                    <div class="input-feild">
+                        <input class="input-feild-input" type="text" />
+                    </div>
+                </div>
+                <div class="input-component">
+                    <div class="input-label">Type</div>
+                    <div class="input-feild">
+                        <select title="Select your spell" class="selectpicker">
+                            <option data-icon="glyphicon glyphicon-eye-open" data-subtext="petrification">String</option>
+                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Number</option>
+                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Date</option>
+                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">AutoComplete</option>
+                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Boolean</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-component">
+                    <div class="input-label">Allow negative values</div>
+                    <div class="input-feild">
+                        <input class="toggle-trigger" checked type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" data-style="slow" >
+                    </div>
+                </div>
+                <div class="input-component">
+                    <div class="input-label">Allow negative values</div>
+                    <div class="input-feild">
+                        <input class="toggle-trigger" checked type="checkbox" data-toggle="toggle" data-on="Yes" data-off="No" data-style="slow" >
+                    </div>
+                </div>
+
+                <div class="input-component">
+                    <div class="input-label">Maximum number</div>
+                    <div class="input-feild">
+                        <input class="input-feild-input width-100" type="text" />
+                    </div>
+                </div>
+                <div class="input-component">
+                    <div class="input-label">Minimum number</div>
+                    <div class="input-feild">
+                        <input class="input-feild-input width-100" type="text" />
+                    </div>
+                </div>
+                <div class="input-component">
+                    <div class="input-label">Group</div>
+                    <div class="input-feild">
+                        <select title="Select your spell" class="selectpicker">
+                            <option data-icon="glyphicon glyphicon-eye-open" data-subtext="petrification">General</option>
+                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Technical</option>
+                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Marketing</option>
+                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Manufacturing</option>
+                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Media</option>
+                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Others</option>
+                        </select>
+                    </div>
+                </div>
+
+
+
             </div>
             <div id="Translations" class="tabcontent">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
+                <div class="title">
+                    Translation
+                </div>
+                <div class="input-component">
+                    <div class="input-label">English</div>
+                    <div class="input-feild">
+                        <input class="input-feild-input" type="text" />
+                    </div>
+                </div>
+                <div class="input-component">
+                    <div class="input-label">French</div>
+                    <div class="input-feild">
+                        <input class="input-feild-input" type="text" />
+                    </div>
+                </div>
+                <div class="input-component">
+                    <div class="input-label">Spanish</div>
+                    <div class="input-feild">
+                        <input class="input-feild-input" type="text" />
+                    </div>
+                </div>
+
+
+
+
+
             </div>
 
             <div id="Security" class="tabcontent">
@@ -59,8 +143,158 @@
                 <p>Tokyo is the capital of Japan.</p>
             </div>
             <div id="History" class="tabcontent">
-                <h3>Amd</h3>
-                <p>Amd is the capital of Japan.</p>
+                <div class="title">
+                    History
+                </div>
+                <div class="unbxd-table">
+                    <div class="table-header">
+                        <div class="table-row">
+                            <div class="col version"> <div class="version-val">Version</div></div>
+                            <div class="col editor">Editor</div>
+                            <div class="col updated-on">Updated On</div>
+                            <div class="col old-value"><div class="old-value-val">Old Value</div></div>
+                            <div class="col new-value"><div class="new-value-val">New Value</div></div>
+
+                        </div>
+                    </div>
+                    <div class="table-body">
+                        <div class="table-row " >
+                            <div class="col1 version">
+                                <div class="version-val">1</div>
+                            </div>
+                            <div class="col2 editor">
+                                <div class="editor-val">sivanv</div>
+                            </div>
+                            <div class="col3 updated-on">
+                                <div class="updated-on-val"> 25 August 2017, 09:45pm</div>
+                            </div>
+                            <div class="col3 old-value">
+                                <div class="old-value-val"> code: auto_exposure
+                                    type: pim_catalog_boolean
+                                    group: technical
+                                    useable_as_grid_filter: 1
+                                    sort_order: 39
+                                    label-de_DE: Auto exposure
+                                    label-en_US: Auto exposure
+                                    label-fr_FR: Auto exposure
+                                    scope: Global</div>
+                            </div>
+                            <div class="col3 new-value">
+                                <div class="new-value-val"> code: auto_exposure
+                                    type: pim_catalog_boolean
+                                    group: technical
+                                    useable_as_grid_filter: 1
+                                    sort_order: 39
+                                    label-de_DE: Auto exposure
+                                    label-en_US: Auto exposure
+                                    label-fr_FR: Auto exposure
+                                    scope: Global</div>
+                            </div>
+                        </div>
+                        <div class="table-row " >
+                            <div class="col1 version">
+                                <div class="version-val">2</div>
+                            </div>
+                            <div class="col2 editor">
+                                <div class="editor-val">sivanv</div>
+                            </div>
+                            <div class="col3 updated-on">
+                                <div class="updated-on-val"> 25 August 2017, 09:45pm</div>
+                            </div>
+                            <div class="col3 old-value">
+                                <div class="old-value-val"> code: auto_exposure
+                                    type: pim_catalog_boolean
+                                    group: technical
+                                    useable_as_grid_filter: 1
+                                    sort_order: 39
+                                    label-de_DE: Auto exposure
+                                    label-en_US: Auto exposure
+                                    label-fr_FR: Auto exposure
+                                    scope: Global</div>
+                            </div>
+                            <div class="col3 new-value">
+                                <div class="new-value-val"> code: auto_exposure
+                                    type: pim_catalog_boolean
+                                    group: technical
+                                    useable_as_grid_filter: 1
+                                    sort_order: 39
+                                    label-de_DE: Auto exposure
+                                    label-en_US: Auto exposure
+                                    label-fr_FR: Auto exposure
+                                    scope: Global</div>
+                            </div>
+                        </div>
+                        <div class="table-row " >
+                            <div class="col1 version">
+                                <div class="version-val">3</div>
+                            </div>
+                            <div class="col2 editor">
+                                <div class="editor-val">sivanv</div>
+                            </div>
+                            <div class="col3 updated-on">
+                                <div class="updated-on-val"> 25 August 2017, 09:45pm</div>
+                            </div>
+                            <div class="col3 old-value">
+                                <div class="old-value-val"> code: auto_exposure
+                                    type: pim_catalog_boolean
+                                    group: technical
+                                    useable_as_grid_filter: 1
+                                    sort_order: 39
+                                    label-de_DE: Auto exposure
+                                    label-en_US: Auto exposure
+                                    label-fr_FR: Auto exposure
+                                    scope: Global</div>
+                            </div>
+                            <div class="col3 new-value">
+                                <div class="new-value-val"> code: auto_exposure
+                                    type: pim_catalog_boolean
+                                    group: technical
+                                    useable_as_grid_filter: 1
+                                    sort_order: 39
+                                    label-de_DE: Auto exposure
+                                    label-en_US: Auto exposure
+                                    label-fr_FR: Auto exposure
+                                    scope: Global</div>
+                            </div>
+                        </div>
+
+                        <div class="table-row " >
+                            <div class="col1 version">
+                                <div class="version-val">4</div>
+                            </div>
+                            <div class="col2 editor">
+                                <div class="editor-val">sivanv</div>
+                            </div>
+                            <div class="col3 updated-on">
+                                <div class="updated-on-val"> 25 August 2017, 09:45pm</div>
+                            </div>
+                            <div class="col3 old-value">
+                                <div class="old-value-val"> code: auto_exposure
+                                    type: pim_catalog_boolean
+                                    group: technical
+                                    useable_as_grid_filter: 1
+                                    sort_order: 39
+                                    label-de_DE: Auto exposure
+                                    label-en_US: Auto exposure
+                                    label-fr_FR: Auto exposure
+                                    scope: Global</div>
+                            </div>
+                            <div class="col3 new-value">
+                                <div class="new-value-val"> code: auto_exposure
+                                    type: pim_catalog_boolean
+                                    group: technical
+                                    useable_as_grid_filter: 1
+                                    sort_order: 39
+                                    label-de_DE: Auto exposure
+                                    label-en_US: Auto exposure
+                                    label-fr_FR: Auto exposure
+                                    scope: Global</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 .edit-property-container {
   .property-edit-header {
-    .edit-back-btn{
+    .edit-back-btn {
       color: #b0bbca;
       width: 50px;
       font-size: 14px;
@@ -35,8 +35,8 @@
       height: 19px;
       display: block;
       outline: 0;
-      background:none;
-      border:none;
+      background: none;
+      border: none;
       font-size: 14px;
       color: #445870;
       margin: 10px;
@@ -53,15 +53,144 @@
     }
   }
 
-  .edit-container{
+  .edit-container {
     padding: 0;
     .tabcontent {
       width: 100%;
-      height: 857px;
+      min-height:700px;
       border-radius: 3px;
       background-color: #ffffff;
       border: solid 1px #e0e7ee;
       display: none;
+    }
+
+    .title {
+      height: 22px;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: left;
+      color: #445870;
+      margin: 20px 0 0 35px;
+      display: block;
+    }
+
+    .input-component {
+      display: block;
+      height: 60px;
+      margin: 25px 0 0 35px;
+      .input-label {
+        height: 17px;
+        opacity: 0.5;
+        font-size: 12px;
+        text-align: left;
+        color: #3c3c3c;
+      }
+      .input-feild {
+        height: 40px;
+        display: block;
+        margin-top: 10px;
+        .input-feild-input {
+          width: 210px;
+          height: 40px;
+          display: block;
+          border-radius: 3px;
+          background-color: #ffffff;
+          border: solid 1px #b0bbca;
+          outline: none;
+          padding: 10px 15px;
+          font-size: 14px;
+          font-weight: 500;
+          text-align: left;
+          color: #3c3c3c;
+
+          &.width-100 {
+            width: 80px;
+          }
+
+        }
+        .input-feild-select {
+          width: 210px;
+          height: 40px;
+          display: block;
+          border-radius: 3px;
+          background-color: #ffffff;
+          border: solid 1px #b0bbca;
+          outline: none;
+        }
+
+        .bootstrap-select {
+          width: 210px;
+
+          height: 40px;
+          color: #3c3c3c;
+          button {
+            background: none;
+            height: 40px;
+            outline: none !important;
+
+            small {
+              display: none;
+            }
+          }
+
+          .dropdown-menu {
+            li {
+              height: 40px;
+              a {
+                outline: none;
+                &:focus {
+                  background: none;
+                }
+              }
+              small {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .unbxd-table {
+
+      .table-body{
+        border: none;
+        height: 600px;
+        .table-row{
+          border-bottom: solid 1px #f6f7f9;
+          margin:20px 0;
+        }
+      }
+      .version {
+        width: 10%;
+        .version-val{
+          margin-left: 20px;
+        }
+      }
+      .editor {
+        width: 15%;
+        .editor-val{
+
+        }
+      }
+      .updated-on {
+        width: 20%;
+        .updated-on-val{
+
+        }
+      }
+      .old-value {
+        width: 20%;
+        .old-value-val{
+          margin-left: 10px;
+        }
+      }
+      .new-value {
+        width: 20%;
+        .new-value-val{
+          margin-left: 10px;
+        }
+      }
     }
   }
 

@@ -875,6 +875,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-right: 2%;
 }
 .grid-item {
   width: 370px;
@@ -1353,11 +1354,120 @@
 }
 .edit-panel-component .edit-container .tabcontent {
   width: 100%;
-  height: 857px;
+  min-height: 700px;
   border-radius: 3px;
   background-color: #ffffff;
   border: solid 1px #e0e7ee;
   display: none;
+}
+.edit-panel-component .edit-container .title {
+  height: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: #445870;
+  margin: 20px 0 0 35px;
+  display: block;
+}
+.edit-panel-component .edit-container .input-component {
+  display: block;
+  height: 60px;
+  margin: 25px 0 0 35px;
+}
+.edit-panel-component .edit-container .input-component .input-label {
+  height: 17px;
+  opacity: 0.5;
+  font-size: 12px;
+  text-align: left;
+  color: #3c3c3c;
+}
+.edit-panel-component .edit-container .input-component .input-feild {
+  height: 40px;
+  display: block;
+  margin-top: 10px;
+}
+.edit-panel-component .edit-container .input-component .input-feild .input-feild-input {
+  width: 210px;
+  height: 40px;
+  display: block;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #b0bbca;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #3c3c3c;
+}
+.edit-panel-component .edit-container .input-component .input-feild .input-feild-input.width-100 {
+  width: 80px;
+}
+.edit-panel-component .edit-container .input-component .input-feild .input-feild-select {
+  width: 210px;
+  height: 40px;
+  display: block;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #b0bbca;
+  outline: none;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select {
+  width: 210px;
+  height: 40px;
+  color: #3c3c3c;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select button {
+  background: none;
+  height: 40px;
+  outline: none !important;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select button small {
+  display: none;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select .dropdown-menu li {
+  height: 40px;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select .dropdown-menu li a {
+  outline: none;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select .dropdown-menu li a:focus {
+  background: none;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select .dropdown-menu li small {
+  display: none;
+}
+.edit-panel-component .edit-container .unbxd-table .table-body {
+  border: none;
+  height: 600px;
+}
+.edit-panel-component .edit-container .unbxd-table .table-body .table-row {
+  border-bottom: solid 1px #f6f7f9;
+  margin: 20px 0;
+}
+.edit-panel-component .edit-container .unbxd-table .version {
+  width: 10%;
+}
+.edit-panel-component .edit-container .unbxd-table .version .version-val {
+  margin-left: 20px;
+}
+.edit-panel-component .edit-container .unbxd-table .editor {
+  width: 15%;
+}
+.edit-panel-component .edit-container .unbxd-table .updated-on {
+  width: 20%;
+}
+.edit-panel-component .edit-container .unbxd-table .old-value {
+  width: 20%;
+}
+.edit-panel-component .edit-container .unbxd-table .old-value .old-value-val {
+  margin-left: 10px;
+}
+.edit-panel-component .edit-container .unbxd-table .new-value {
+  width: 20%;
+}
+.edit-panel-component .edit-container .unbxd-table .new-value .new-value-val {
+  margin-left: 10px;
 }
 .add-product-container {
   margin-top: 35px;
@@ -1389,6 +1499,7 @@
 }
 body {
   font-family: "Avenir Next", sans-serif;
+  overflow: hidden;
 }
 #appContainer {
   height: 705px;
@@ -1475,7 +1586,8 @@ body {
 }
 .unbxd-table .table-row .col1,
 .unbxd-table .table-row .col2,
-.unbxd-table .table-row .col3 {
+.unbxd-table .table-row .col3,
+.unbxd-table .table-row .col {
   display: inline-block;
   position: relative;
   top: 0;
@@ -1497,7 +1609,8 @@ body {
 }
 .unbxd-table .table-header .col1,
 .unbxd-table .table-header .col2,
-.unbxd-table .table-header .col3 {
+.unbxd-table .table-header .col3,
+.unbxd-table .table-header .col {
   opacity: 0.5;
   font-size: 10px;
   text-align: left;
