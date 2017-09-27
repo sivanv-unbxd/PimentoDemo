@@ -1,0 +1,23 @@
+<div class="container manage-container">
+    <!-- Example row of columns -->
+    <div class="row ">
+        <div class="col-md-2">
+            <div class="products-breadcrumb">Manage Properties</div>
+        </div>
+        <div class="col-md-10">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 navbar-manage">
+            <ul class="nav navbar-nav navbar-menu">
+                <li><a href="#/manage/properties">Properties</a></li>
+                <li><a href="#/manage/groups">Groups</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</div>
+
+<div id="manageSectionContainer"></div>

@@ -1,0 +1,33 @@
+.manage-properties-container {
+  margin-top: 35px;
+}
+.manage-properties-container .unbxd-table .table-header .col1,
+.manage-properties-container .unbxd-table .table-header .col2,
+.manage-properties-container .unbxd-table .table-header .col3 {
+  height: 36px;
+}
+.manage-properties-container .unbxd-table .col1,
+.manage-properties-container .unbxd-table .col2,
+.manage-properties-container .unbxd-table .col3 {
+  margin-top: 20px;
+  height: 40px;
+}
+.manage-properties-container .unbxd-table .property-col {
+  width: 40%;
+}
+.manage-properties-container .unbxd-table .type-col {
+  width: 30%;
+}
+.manage-properties-container .unbxd-table .group-col {
+  width: 25%;
+}
+.manage-properties-container .unbxd-table .table-row {
+  height: 60px;
+  border-bottom: solid 1px #f6f7f9;
+}
+.manage-properties-container .unbxd-table .table-row:hover {
+  background-color: #f6f7f9;
+}
+.manage-properties-container .unbxd-table .property-name {
+  margin-left: 20px;
+}

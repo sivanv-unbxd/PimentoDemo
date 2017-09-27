@@ -1,0 +1,75 @@
+.welcome-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-user-select: none;
+  /* Chrome/Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE10+ */
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+}
+.welcome-container .welcome-note .helper-options-container .helper-option {
+  width: 202px;
+  height: 203px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #e0e7ee;
+  display: inline-block;
+  margin: 22px;
+  cursor: pointer;
+}
+.welcome-container .welcome-note .helper-options-container .helper-option .helper-icon {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 84px 84px;
+  position: relative;
+  top: 40px;
+  left: 60px;
+}
+.welcome-container .welcome-note .helper-options-container .helper-option .helper-text {
+  height: 19px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #61adc8;
+  position: relative;
+  top: 60px;
+  text-align: center;
+  width: 100%;
+}
+.welcome-container .welcome-note .helper-options-container .helper-option .import-products {
+  background-image: url(../../img/importProducts.png);
+}
+.welcome-container .welcome-note .helper-options-container .helper-option .add-attributes {
+  background-image: url(../../img/addAttribute.png);
+}
+.welcome-container .welcome-note .helper-options-container .helper-option .add-category {
+  background-image: url(../../img/addCategory.png);
+}
+.welcome-container .welcome-note .helper-options-container .helper-option:hover {
+  border: solid 1px #dd2f5e;
+}
+.welcome-container .welcome-note .helper-options-container #importProductsUpload {
+  visibility: hidden;
+}
+.welcome-container .welcome-note .sample-data {
+  width: 100%;
+  text-align: center;
+  height: 27px;
+  font-size: 20px;
+  color: #666666;
+  margin-top: 42px;
+}
+.welcome-container .welcome-note .sample-data a {
+  color: #509db9;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.welcome-container .welcome-note .sample-data a:hover {
+  color: #dd2f5e;
+}

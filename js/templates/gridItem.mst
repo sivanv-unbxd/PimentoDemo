@@ -1,0 +1,28 @@
+<div class="grid-item gridActionsHandler" id="{{id}}">
+
+    <div class="product-image">
+        <img src="{{imageUrl}}" class="thumbnail-img"/>
+    </div>
+    <div class="product-mask">
+        <span class="glyphicon glyphicon-pencil editItem"></span>
+        <span class="glyphicon glyphicon-option-horizontal selectItem"></span>
+    </div>
+    <div class="product-details">
+        <div class="product-name">{{name}}</div>
+        <div class="product-status">
+            <span class="{{status}}"></span>
+        </div>
+        <div class="product-sku">
+            <span class="sku-label">SKU:</span>
+            <span class="sku-value">{{skuId}}</span>
+        </div>
+        <div class="product-price">
+            <span class="price-currency">{{currency}}</span>
+            <span class="price-value">{{price}}</span>
+        </div>
+        <div class="product-category">
+            <span class="category-label">Category:</span>
+            <span class="category-value">{{category}}</span>
+        </div>
+    </div>
+</div>

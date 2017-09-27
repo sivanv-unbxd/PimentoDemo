@@ -1,0 +1,32 @@
+<div class="container add-product-container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-2">
+            <div class="products-breadcrumb">Add a Product</div>
+        </div>
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-2">
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="listing-grid">
+                <div class="grid-actions">
+
+                </div>
+                <div class="grid-header">
+
+                </div>
+                <div class="grid-body">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

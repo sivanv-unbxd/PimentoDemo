@@ -1,0 +1,67 @@
+.products-container .listing-table {
+  width: 100%;
+  margin-top: 30px;
+  height: 850px;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+.products-container .listing-table .table-row .col1,
+.products-container .listing-table .table-row .col2,
+.products-container .listing-table .table-row .col3,
+.products-container .listing-table .table-row .col4,
+.products-container .listing-table .table-row .col5,
+.products-container .listing-table .table-row .col6,
+.products-container .listing-table .table-row .col7,
+.products-container .listing-table .table-row .col8 {
+  display: inline-block;
+  position: relative;
+  top: 0;
+  vertical-align: middle;
+  text-align: left;
+}
+.products-container .listing-table .table-header {
+  width: 100%;
+  height: 36px;
+  background-color: #f6f7f9;
+  border: 1px solid darkgray;
+}
+.products-container .listing-table .table-header .table-row {
+  height: 36px;
+  border-bottom: none;
+}
+.products-container .listing-table .table-header .table-row:hover {
+  background-color: transparent;
+}
+.products-container .listing-table .table-header .col1,
+.products-container .listing-table .table-header .col2,
+.products-container .listing-table .table-header .col3,
+.products-container .listing-table .table-header .col4,
+.products-container .listing-table .table-header .col5,
+.products-container .listing-table .table-header .col6,
+.products-container .listing-table .table-header .col7,
+.products-container .listing-table .table-header .col8 {
+  opacity: 0.5;
+  font-size: 10px;
+  text-align: left;
+  color: #445870;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 10px;
+}
+.products-container .listing-table .table-header .col1 .table-check-all {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #b0bbca;
+  position: relative;
+  left: 29px;
+  top: -5px;
+}
+.products-container .listing-table .table-body {
+  border: solid 1px #e0e7ee;
+  border-top-width: 0;
+  height: 800px;
+  overflow: scroll;
+}

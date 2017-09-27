@@ -1,0 +1,36 @@
+<div class="container assets-container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-2">
+            <div class="products-breadcrumb">Assets</div>
+        </div>
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-2">
+            <div class="add-product">
+                <button class="add-product-btn" id="addProduct">
+                    <span class="add-product-text">+ Add an Image</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="listing-grid">
+                <div class="grid-actions">
+
+                </div>
+                <div class="grid-header">
+
+                </div>
+                <div class="grid-body">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

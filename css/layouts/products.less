@@ -1,0 +1,191 @@
+.products-container {
+  margin-top: 35px;
+  -webkit-user-select: none; /* Chrome/Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+ */
+
+  /* Rules below not implemented in browsers yet */
+  -o-user-select: none;
+  user-select: none;
+
+  .products-breadcrumb {
+    height: 22px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    color: #445870;
+  }
+  .product-actions {
+    margin-top: 30px;
+  }
+
+
+  .filter-container {
+    display: block;
+    width: 250px;
+    position: relative;
+    top: 7px;
+    .filter-label {
+      font-size: 14px;
+      font-weight: normal;
+      text-align: left;
+      color: #445870;
+    }
+    .filter-name {
+      font-size: 14px;
+      font-weight: 500;
+      text-align: left;
+      color: #445870;
+    }
+
+  }
+
+  .pagination-container {
+    display: inline-block;
+    width: 250px;
+    position: relative;
+    top: -7px;
+    height: 30px;
+    left: 100px;
+    .pagination-summary {
+      position: relative;
+      display: inline-block;
+      height: 30px;
+      top: -23px;
+      .page-size-dd {
+        display: inline;
+      }
+      .pagination-pager-sizes {
+        min-width: 60px;
+      }
+      .page-text {
+        height: 16px;
+        font-size: 12px;
+        text-align: left;
+        color: #445870;
+        font-weight: normal;
+        display: inline;
+      }
+      .page-size {
+        height: 16px;
+        font-size: 12px;
+        text-align: left;
+        color: #445870;
+        font-weight: 500;
+        display: inline;
+      }
+    }
+    .page-left {
+      background-image: url(../../img/pageLeftArrow.png);
+      background-repeat: no-repeat;
+      transform: scale(0.5);
+      width: 50px;
+      height: 52px;
+      object-fit: contain;
+      display: inline-block;
+    }
+    .page-right {
+      background-image: url(../../img/pageRightArrow.png);
+      background-repeat: no-repeat;
+      transform: scale(0.5);
+      width: 50px;
+      height: 52px;
+      object-fit: contain;
+      display: inline-block;
+      position: relative;
+      left: -20px;
+    }
+  }
+  .grid-actions {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 1px #e0e7ee;
+    width: 40px;
+    height: 26px;
+    float: right;
+    .grid-actions-dd {
+      height: 25px;
+      .dropdown-menu {
+        right: 0;
+        left: unset;
+      }
+    }
+    .page-actions {
+      background-image: url(../../img/pageActions.png);
+      background-repeat: no-repeat;
+      transform: scale(0.5);
+      width: 50px;
+      height: 52px;
+      object-fit: contain;
+      position: relative;
+      display: inline-block;
+      top: -8px;
+      left: -3px;
+    }
+
+  }
+
+  .listing-table {
+    width: 100%;
+    margin-top: 30px;
+    height: 850px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    .table-row {
+      .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8 {
+        display: inline-block;
+        position: relative;
+        top: 0;
+        vertical-align: middle;
+        text-align: left;
+      }
+
+    }
+    .table-header {
+      .table-row {
+        height: 36px;
+      }
+      width: 100%;
+      height: 36px;
+      background-color: #f6f7f9;
+      box-shadow: 0 0 0 1px #e0e7ee;
+
+      .col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8 {
+        opacity: 0.5;
+        font-size: 10px;
+        text-align: left;
+        color: #445870;
+        padding-top: 10px;
+        text-transform: uppercase;
+        margin: 0;
+        padding-top: 10px;
+
+      }
+
+      .col1 {
+        .table-check-all {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          border-radius: 2px;
+          background-color: #ffffff;
+          border: solid 1px #b0bbca;
+          position: relative;
+          left: 29px;
+        }
+      }
+
+    }
+    .table-body {
+      border: solid 1px #e0e7ee;
+      height: 800px;
+      overflow: scroll;
+    }
+
+  }
+
+}
+

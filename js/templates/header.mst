@@ -1,0 +1,58 @@
+<div class="container header-container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="#/"> </a>
+            </div>
+        </div>
+        <div class="col-md-10">
+            {{^loggedIn}}
+            <div class="navbar-userInfo">
+                <div class="register">Register</div>
+            </div>
+            {{/loggedIn}}
+
+
+            {{#loggedIn}}
+
+            <ul class="nav navbar-nav navbar-menu">
+                <li><a href="#/overview">OVERVIEW</a></li>
+                <li><a href="#/products">PRODUCTS</a></li>
+                <li><a href="#/assets">ASSETS</a></li>
+                <li><a href="#/manage">MANAGE</a></li>
+
+            </ul>
+
+            <div class="navbar-userInfo">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle register" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span><span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Another action</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle userName" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">{{headerName}} <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#" id="logoutPimento">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+            {{/loggedIn}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+.manage-container {
+  margin-top: 35px;
+}
+.manage-container .products-breadcrumb {
+  height: 25px;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #CCCCCC;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.manage-container .navbar-manage .navbar-menu {
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #CCCCCC;
+  width: 100%;
+}
+.manage-container .navbar-manage .navbar-menu li {
+  height: 38px;
+}
+.manage-container .navbar-manage .navbar-menu li a {
+  padding: 0;
+  margin: 0 20px 0 0;
+  line-height: 38px;
+  vertical-align: middle;
+  height: 38px;
+  font-size: 12px;
+  text-align: left;
+  color: gray;
+  font-weight: 300;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+.manage-container .navbar-manage .navbar-menu li a:hover,
+.manage-container .navbar-manage .navbar-menu li a:focus {
+  background-color: transparent;
+  color: black;
+}
+.manage-container .navbar-manage .navbar-menu li.active a {
+  border-bottom: solid 1px #dd2f5e;
+  color: black;
+  text-shadow: 0.01em 0.01em black;
+}
+.manage-container .navbar-manage .navbar-menu .nav > li > a:hover,
+.manage-container .navbar-manage .navbar-menu .nav > li > a:focus {
+  text-decoration: underline;
+  background-color: transparent;
+}

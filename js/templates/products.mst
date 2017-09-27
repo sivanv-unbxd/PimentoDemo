@@ -1,0 +1,114 @@
+<div class="container products-container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-2">
+            <div class="products-breadcrumb">Products</div>
+        </div>
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-2">
+            <div class="add-product">
+                <button class="add-product-btn" id="addProduct">
+                    <a href="#/addProduct" class="add-product-text">Add Product</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row product-actions">
+        <div class="col-md-2">
+            <div class="products-search">
+                <span class="search-icon"></span>
+                <input type="text" class="search-input" placeholder="Search"/>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="filter-container">
+                <span class="filter-label"> Filter by:</span>
+                <span class="filter-name">Category</span>
+                <span class="filter-label">&#62; </span>
+                <span class="filter-name">Men</span>
+                <span class="filter-label">&#62; </span>
+                <span class="filter-name">Denim</span>
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4">
+            <div class="pagination-container">
+                <div class="pagination-summary">
+                <div class="dropdown page-size-dd">
+                    <a href="#" class="dropdown-toggle register" data-toggle="dropdown" role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        <span class="page-size"> 50 </span>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu pagination-pager-sizes">
+                        <li><a href="#">10</a></li>
+                        <li><a href="#">20</a></li>
+                        <li><a href="#">50</a></li>
+                        <li><a href="#">100</a></li>
+                        <li><a href="#">200</a></li>
+                    </ul>
+                </div>
+                <span class="page-text"> of </span>
+                <span class="page-text"> 3000 </span>
+                <span class="page-text"> products </span>
+                </div>
+                <span class="page-left"></span>
+                <span class="page-right"></span>
+
+            </div>
+            <div class="grid-actions">
+                <div class="dropdown grid-actions-dd">
+                    <a href="#" class="dropdown-toggle register" data-toggle="dropdown" role="button"
+                       aria-haspopup="true"
+                       aria-expanded="false">
+                        <span class="page-actions"></span>
+                    </a>
+                    <ul class="dropdown-menu" id="gridActions">
+                        {{#meta.tableView}}
+                        <li><a href="javascript:void(0)">Change to Grid View</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dir"><a href="javascript:void(0)">Display Density</a>
+                            <ul>
+                                <li><a href="javascript:void(0)">Comfortable</a></li>
+                                <li><a href="javascript:void(0)">Cozy</a></li>
+                                <li><a href="javascript:void(0)">Compact</a></li>
+                            </ul>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="javascript:void(0)">Manage Columns</a></li>
+                        {{/meta.tableView}}
+                        {{^meta.tableView}}
+                        <li><a href="javascript:void(0)">Change to List View</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li class="dir"><a href="javascript:void(0)">Display Density</a>
+                            <ul>
+                                <li><a href="javascript:void(0)">Comfortable</a></li>
+                                <li><a href="javascript:void(0)">Cozy</a></li>
+                                <li><a href="javascript:void(0)">Compact</a></li>
+                            </ul>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="javascript:void(0)">Manage Attributes</a></li>
+                        {{/meta.tableView}}
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    {{#meta.tableView}}
+        {{> productListView}}
+    {{/meta.tableView}}
+
+    {{^meta.tableView}}
+        {{> productGridView}}
+    {{/meta.tableView}}
+
+
+
+</div>

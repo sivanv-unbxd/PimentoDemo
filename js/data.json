@@ -1,0 +1,313 @@
+{
+  "products": [
+    {
+      "id" : 1,
+      "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41qJstxYCZL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+
+    {
+      "id" : 2,
+      "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41eRCdEnM6L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "red",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 3,
+      "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/51YDP3ViEjL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 4,
+      "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41vqEIs3m5L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "red",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 5,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41eRCdEnM6L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "red",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 6,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41vqEIs3m5L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 7,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41qJstxYCZL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 8,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41eRCdEnM6L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 9,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/51YDP3ViEjL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 10,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41vqEIs3m5L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 11,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/51YDP3ViEjL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 12,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41qJstxYCZL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 13,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41qJstxYCZL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 14,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41eRCdEnM6L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 15,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/51YDP3ViEjL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 16,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41vqEIs3m5L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 17,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41eRCdEnM6L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 18,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41qJstxYCZL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 19,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41vqEIs3m5L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 20,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41vqEIs3m5L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 21,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/51YDP3ViEjL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 22,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41eRCdEnM6L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 23,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41qJstxYCZL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 24,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41qJstxYCZL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 25,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41eRCdEnM6L._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 26,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/51YDP3ViEjL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 27,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/41qJstxYCZL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    },
+    {
+      "id" : 28,
+       "imageUrl" : "https://images-na.ssl-images-amazon.com/images/I/51YDP3ViEjL._SS75_.jpg",
+      "name" : "Faded denim jeans",
+      "skuId" : "56456",
+      "status" : "green",
+      "category" : "Denims",
+      "price" : "40.00",
+      "addedOn" : "25 Jan 2017",
+      "currency" : "$"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+<div class="container manage-groups-container">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="products-search">
+                <span class="search-icon"></span>
+                <input type="text" class="search-input" placeholder="Search"/>
+            </div>
+        </div>
+        <div class="col-md-8">
+        </div>
+        <div class="col-md-2">
+            <div class="add-product">
+                <button class="add-product-btn" id="addProduct">
+                    <a href="#/addProduct" class="add-product-text">Add Group</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="unbxd-table">
+                <div class="table-header">
+                    <div class="table-row">
+                        <div class="col1 group-col"> <div class="group-details">Group Name</div></div>
+                        <div class="col2 comments-col">Comment</div>
+
+                    </div>
+                </div>
+                <div class="table-body">
+                    <div class="table-row">
+                        <div class="col1 group-col">
+                            <div class="group-details">
+                                <div class="group-name">Marketing</div>
+                                <div class="group-props">Properties(5)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col2 comments-col">
+                            <div class="group-comments"> Some Comments Here</div>
+                        </div>
+
+                    </div>
+                    <div class="table-row">
+                        <div class="col1 group-col">
+                            <div class="group-details">
+                                <div class="group-name">Technical</div>
+                                <div class="group-props">Properties(5)</div>
+                            </div>
+                        </div>
+                        <div class="col2 comments-col">
+                            <div class="group-comments"> Some Comments Here</div>
+                        </div>
+                    </div>
+                    <div class="table-row">
+                        <div class="col1 group-col">
+                            <div class="group-details">
+                                <div class="group-name">Manufacturing</div>
+                                <div class="group-props">Properties(5)</div>
+                            </div>
+                        </div>
+                        <div class="col2 comments-col">
+                            <div class="group-comments"> Some Comments Here</div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>

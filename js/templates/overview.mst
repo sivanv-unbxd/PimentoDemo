@@ -1,0 +1,33 @@
+<div class="container welcome-container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8">
+            <div class="welcome-note">
+                <div class="helper-options-container">
+                    <div class="helper-option" id="importProducts">
+
+                        <div class="helper-icon import-products"></div>
+
+                        <div class="helper-text">Import Products</div>
+                    </div>
+                    <div class="helper-option">
+                        <div class="helper-icon add-attributes"></div>
+                        <div class="helper-text">Add Attributes</div>
+                    </div>
+                    <div class="helper-option">
+                        <div class="helper-icon add-category"></div>
+                        <div class="helper-text">Add Categories</div>
+                    </div>
+                </div>
+
+                <div class="sample-data">You can also try Pimento with our <a href="#/products" id="loadSampleData">sample data</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+        </div>
+
+    </div>
+</div>

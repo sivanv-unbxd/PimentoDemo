@@ -1,0 +1,52 @@
+<div class="container login-container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5">
+            <div class="pimento-note">
+                <div class="line1">Welcome to Pimento!</div>
+                <div class="line2">Pimento is the one-stop-shop for your content.
+                    Whether it is marketing content, product features,
+                    price changes on long-tail assortments,
+                    your team can now be on top of it all!
+                </div>
+                <div class="line3">Did you know?</div>
+                <div class="line4"><em>87% of shoppers</em> leave a site because
+                    the information did not meet their needs
+                </div>
+                <div class="line5"><em>20% estimated revenue increases</em> have been
+                    attributed to a PIM solution implementation
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-5">
+                <div class="login-form">
+                    <div class="login-text">Log In</div>
+                    <div class="google-signin-block">
+                        <a href="#" class="google-signin"></a>
+                    </div>
+
+                    <div class="form-group username-block">
+                        <label for="userName" class="username-label">Email address</label>
+                        <input type="email" class="form-control username-input" id="userName" name="userName"
+                               aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+
+                    <div class="form-group password-block">
+                        <label for="password" class="pwd-label">Password</label>
+                        <input type="password" class="form-control pwd-input" id="password" name="password"
+                               placeholder="Password">
+                    </div>
+                    <div class="forgot-password-block">
+                        <label class="forgot-pwd-link">Forgot Password</label>
+                    </div>
+                    <div class="login-submit">
+                        <button class="login-submit-btn" id="loginSubmit" ><span class="submit-text">Proceed</span></button>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>

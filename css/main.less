@@ -1,0 +1,193 @@
+@import "layouts/header.less";
+@import "layouts/footer.less";
+@import "layouts/login.less";
+@import "layouts/overview.less";
+
+@import "layouts/products.less";
+@import "layouts/productsTable.less";
+@import "layouts/tableRow.less";
+@import "layouts/productsGrid.less";
+@import "layouts/gridItem.less";
+
+@import "layouts/assets.less";
+@import "layouts/manage.less";
+@import "layouts/manageProperties.less";
+@import "layouts/manageGroups.less";
+
+
+@import "layouts/addProduct.less";
+
+body{
+  font-family: "Avenir Next", sans-serif;
+}
+
+#appContainer{
+  height:705px;
+}
+
+//.dropdown-menu li{
+//  position: relative;
+//}
+
+//.dropdown-menu ul
+//{
+//
+//  position: absolute;
+//  z-index: 1000;
+//  float: left;
+//  min-width: 160px;
+//  padding: 5px 0;
+//  margin: 2px 0 0;
+//  font-size: 14px;
+//  text-align: left;
+//  list-style: none;
+//  background-color: #fff;
+//  -webkit-background-clip: padding-box;
+//  background-clip: padding-box;
+//  border: 1px solid rgba(0,0,0,.15);
+//  border-radius: 4px;
+//  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+//  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+//
+//
+//  display:none;
+//  //top:70%;
+//  //left:0;
+//}
+//
+.dropdown-menu ul li
+{
+  width:200px;
+  list-style: none;
+  height: 20px;
+  &:hover{
+    background: rgba(226,222,228,0.45);
+  }
+}
+
+.dropdown-menu ul a
+{
+
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+
+  text-decoration: none;
+  &:hover{
+    color: #000;
+  }
+
+}
+
+
+.products-search {
+  width: 175px;
+  height: 35px;
+  border-radius: 100px;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 1px #e0e7ee;
+  .search-icon {
+    background-image: url(../../img/searchIcon.png);
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    position: relative;
+    display: inline-block;
+    left: 5px;
+    top: 3px;
+    transform: scale(0.5);
+  }
+  .search-input {
+    width: 75px;
+    height: 16px;
+    opacity: 0.5;
+    left: 5px;
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    text-align: left;
+    color: #445870;
+    top: -10px;
+    outline: none;
+    border: none;
+    font-weight: 300;
+  }
+}
+
+
+.add-product {
+  float: right;
+
+  .add-product-btn {
+    width: 127px;
+    height: 35px;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: solid 1px rgba(80, 157, 185, 0.7);
+    outline: none;
+
+    .add-product-text {
+      height: 18px;
+      font-size: 12px;
+      font-weight: 500;
+      text-align: left;
+      color: #61adc8;
+    }
+  }
+}
+
+.unbxd-table {
+  width: 100%;
+  margin-top: 30px;
+  height: auto;
+  border-radius: 3px;
+  background-color: #ffffff;
+  .table-row {
+    .col1, .col2, .col3 {
+      display: inline-block;
+      position: relative;
+      top: 0;
+      vertical-align: middle;
+      text-align: left;
+    }
+
+  }
+  .table-header {
+
+    width: 100%;
+    height: 36px;
+    background-color: #f6f7f9;
+    border: 1px solid darkgray;
+    .table-row {
+      height: 36px;
+      border-bottom: none;
+      &:hover{
+        background-color: transparent;
+      }
+    }
+    .col1, .col2, .col3{
+      opacity: 0.5;
+      font-size: 10px;
+      text-align: left;
+      color: #445870;
+      text-transform: uppercase;
+      margin: 0;
+      padding-top: 10px;
+
+    }
+
+
+  }
+  .table-body {
+    border: solid 1px #e0e7ee;
+    border-top-width: 0;
+    height: 800px;
+    overflow: scroll;
+  }
+
+}
