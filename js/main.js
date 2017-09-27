@@ -44,6 +44,9 @@ $(document).ready(function () {
             this.get('#/editProduct/:id', function (context) {
                 loadAddProductComponent();
             });
+            this.get('#/manage/properties/edit/:id', function (context) {
+                loadEditPropertyComponent();
+            });
         });
         if (session) {
             app.run('#/overview');
@@ -61,7 +64,7 @@ function checkSession() {
         let metaObj = localStorage.getItem("metaObj");
         let meta = (metaObj) ? JSON.parse(metaObj) : "";
         HomeManager.setUserState(user);
-        if(meta){
+        if (meta) {
             HomeManager.setMetaData(meta);
         }
         return true;
@@ -203,7 +206,7 @@ function loadProductsComponent() {
 
 function loadAssetsComponent() {
     loadTemplate('js/templates/assets.mst', 'appContainer')
-    setTabHighlight(2 , ".header-container .navbar-menu");
+    setTabHighlight(2, ".header-container .navbar-menu");
 }
 
 function loadManageComponent(callback) {
@@ -211,12 +214,16 @@ function loadManageComponent(callback) {
     loadTemplate('js/templates/manage.mst', 'appContainer', {}, {}, callback);
     setTabHighlight(3, ".header-container .navbar-menu");
 
-
+    window.location.hash = '#/manage/properties';
 }
 
 function loadManageProperties() {
     setTabHighlight(0, ".manage-container .navbar-menu");
-    loadTemplate('js/templates/manageProperties.mst', 'manageSectionContainer')
+    loadTemplate('js/templates/manageProperties.mst', 'manageSectionContainer');
+
+    $(document).on("click", ".propertyRowActionHandler", function (el) {
+        window.location.hash = '#/manage/properties/edit/' + this.id;
+    });
 }
 
 function loadManageGroups() {
@@ -227,6 +234,21 @@ function loadManageGroups() {
 function loadAddProductComponent() {
     loadTemplate('js/templates/addProduct.mst', 'appContainer')
     setTabHighlight(1, ".header-container .navbar-menu");
+}
+
+function loadEditPropertyComponent() {
+    loadTemplate('js/templates/editProperty.mst', 'appContainer', {}, {});
+    setTabHighlight(3, ".header-container .navbar-menu");
+    setTimeout(function () {
+        $(".edit-left-nav-section .tablinks:nth-child(1)").click();
+    },100)
+
+
+}
+
+function loadEditPropertyGroupComponent() {
+    loadTemplate('js/templates/editProperty.mst', 'appContainer', {}, {});
+    setTabHighlight(3, ".header-container .navbar-menu");
 }
 
 

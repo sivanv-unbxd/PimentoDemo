@@ -1,5 +1,6 @@
 .manage-properties-container {
   margin-top: 35px;
+  font-family: Avenir;
 }
 .manage-properties-container .unbxd-table .table-header .col1,
 .manage-properties-container .unbxd-table .table-header .col2,
@@ -11,6 +12,9 @@
 .manage-properties-container .unbxd-table .col3 {
   margin-top: 20px;
   height: 40px;
+  font-size: 16px;
+  text-align: left;
+  color: #445870;
 }
 .manage-properties-container .unbxd-table .property-col {
   width: 40%;

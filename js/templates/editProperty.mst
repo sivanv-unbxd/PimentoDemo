@@ -1,0 +1,68 @@
+<div class="container manage-container">
+    <!-- Example row of columns -->
+    <div class="row ">
+        <div class="col-md-2">
+            <div class="products-breadcrumb">Manage Properties</div>
+        </div>
+        <div class="col-md-10">
+        </div>
+    </div>
+</div>
+
+<div class="container edit-property-container ">
+    <div class="row">
+
+        <div class="col-md-10">
+            <div class="property-edit-header">
+                <a href="javascript:void(0)" onclick="window.history.go(-1); return false;">
+                    <span class="glyphicon glyphicon-arrow-left edit-back-btn"></span>
+                </a>
+                <span class="property-label">Property</span>
+                <span class="property-name">Auto Focus Bean</span>
+            </div>
+
+        </div>
+        <div class="col-md-2">
+            <div class="add-product">
+                <button class="add-product-btn" id="addProduct">
+                    <a href="javascript:void(0)" class="add-product-text">Save Changes</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="row edit-panel-component">
+
+        <div class="col-md-2">
+            <div class="edit-left-nav-section">
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'Details')" id="defaultOpen">Details</button>
+                    <button class="tablinks" onclick="openTab(event, 'Translations')">Translations</button>
+                    <button class="tablinks" onclick="openTab(event, 'Security')">Security</button>
+                    <button class="tablinks" onclick="openTab(event, 'History')">History</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-10 edit-container">
+            <div id="Details" class="tabcontent">
+                <h3>London</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+            <div id="Translations" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Security" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+            <div id="History" class="tabcontent">
+                <h3>Amd</h3>
+                <p>Amd is the capital of Japan.</p>
+            </div>
+        </div>
+    </div>
+
+</div>

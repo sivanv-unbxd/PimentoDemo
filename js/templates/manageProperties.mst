@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="table-body">
-                    <div class="table-row">
+                    <div class="table-row propertyRowActionHandler" id="property1">
                         <div class="col1 property-col">
                             <div class="property-name">Auto Focus Exposure</div>
                         </div>
@@ -41,7 +41,7 @@
                             <div class="property-group"> Technical</div>
                         </div>
                     </div>
-                    <div class="table-row">
+                    <div class="table-row propertyRowActionHandler" id="property2">
                         <div class="col1 property-col">
                             <div class="property-name">Auto Focus Exposure</div>
                         </div>
@@ -52,7 +52,7 @@
                             <div class="property-group"> Technical</div>
                         </div>
                     </div>
-                    <div class="table-row">
+                    <div class="table-row propertyRowActionHandler" id="property3">
                         <div class="col1 property-col">
                             <div class="property-name">Auto Focus Exposure</div>
                         </div>
