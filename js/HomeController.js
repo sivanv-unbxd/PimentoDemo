@@ -1,5 +1,5 @@
 let HomeManager = function () {
-    let user, metaData, productsList;
+    let user, metaData, productsList, propertiesList, groupsList;
     let listinTableTemplate;
     let listinRowTemplate;
     let gridTemplate;
@@ -56,6 +56,40 @@ let HomeManager = function () {
         productsList = list;
     };
 
+    getPropertiesList = function () {
+        return propertiesList;
+    };
+
+    setPropertiesList = function (list) {
+        propertiesList = list;
+    };
+
+    getGroupsList = function () {
+        return groupsList;
+    };
+
+    getGroupById = function (id) {
+        return _.find(groupsList, 'id', id);;
+    };
+
+    setGroupsList = function (list) {
+
+        let grouped = _.mapValues(_.groupBy(list, 'group'),
+            clist => clist.map(list => _.omit(list, 'group')));
+        groupsList = [];
+        let counter = 0;
+        for(let key in grouped){
+            groupsList.push({
+                id: counter++,
+                name: key,
+                propertiesListStr : JSON.stringify(grouped[key]),
+                propertiesList : grouped[key],
+                propertiesLength : grouped[key].length,
+                comments :"Comments for others"
+            })
+        }
+    };
+
     logoutUser = function () {
         user.loggedIn = false;
         localStorage.setItem("userObj", JSON.stringify(user));
@@ -84,6 +118,11 @@ let HomeManager = function () {
         setMetaData: setMetaData,
         getProductsList: getProductsList,
         setProductsList: setProductsList,
+        getPropertiesList:getPropertiesList,
+        setPropertiesList:setPropertiesList,
+        getGroupsList:getGroupsList,
+        setGroupsList:setGroupsList,
+        getGroupById:getGroupById,
         logoutUser: logoutUser,
         getProductsListingTemplate: getProductsListingTemplate,
         getProducstGridTemplate: getProducstGridTemplate,

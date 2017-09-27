@@ -1,0 +1,700 @@
+{
+  "properties": [
+      {
+        "id": "Base Wholesale Price",
+        "name": "Base Wholesale Price",
+        "type": "number",
+        "group": "Unformatted from ERP"
+      },
+      {
+        "id": "MSRP",
+        "name": "MSRP",
+        "type": "number",
+        "group": "Unformatted from ERP"
+      },
+      {
+        "id": "Retail Price",
+        "name": "Retail Price",
+        "type": "number",
+        "group": "Unformatted from ERP"
+      },
+      {
+        "id": "Category",
+        "name": "Category",
+        "type": "enumerated",
+        "group": "General"
+      },
+      {
+        "id": "Product Height",
+        "name": "Product Height",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Product Length",
+        "name": "Product Length",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Product Weight",
+        "name": "Product Weight",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Product Width",
+        "name": "Product Width",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Active Date",
+        "name": "Active_Date",
+        "type": "date",
+        "group": "Status"
+      },
+      {
+        "id": "Required",
+        "name": "Required",
+        "type": "string",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Reviewed by",
+        "name": "Reviewed by",
+        "type": "string",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Scope",
+        "name": "Scope",
+        "type": "string",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Additional Product Images",
+        "name": "Additional Product Images",
+        "type": "digital_asset",
+        "group": "Digital Assets"
+      },
+      {
+        "id": "Amazon Segment",
+        "name": "Amazon Segment",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Assembly Country of Origin",
+        "name": "Assembly Country of Origin",
+        "type": "enumerated",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Asset Color",
+        "name": "Asset Color",
+        "type": "enumerated",
+        "group": "property config"
+      },
+      {
+        "id": "Asset Created Date",
+        "name": "Asset Created Date",
+        "type": "date",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Asset Keywords",
+        "name": "Asset Keywords",
+        "type": "enumerated",
+        "group": "General"
+      },
+      {
+        "id": "Asset Photographer",
+        "name": "Asset Photographer",
+        "type": "enumerated",
+        "group": "Usage Details"
+      },
+      {
+        "id": "Asset Use",
+        "name": "Asset Use",
+        "type": "enumerated",
+        "group": "Usage Details"
+      },
+      {
+        "id": "Asset Version",
+        "name": "Asset Version",
+        "type": "number",
+        "group": "Usage Details"
+      },
+      {
+        "id": "Assigned to",
+        "name": "Assigned to",
+        "type": "string",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Avertissements",
+        "name": "Avertissements",
+        "type": "rich_text",
+        "group": "Contenu enrichi"
+      },
+      {
+        "id": "Brand",
+        "name": "Brand",
+        "type": "enumerated",
+        "group": "General"
+      },
+      {
+        "id": "Bullet Points",
+        "name": "Bullet Points",
+        "type": "string",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Capacity",
+        "name": "Capacity",
+        "type": "number",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Certifications",
+        "name": "Certifications",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Color",
+        "name": "Color",
+        "type": "enumerated",
+        "group": "General"
+      },
+      {
+        "id": "Component Country of Origin",
+        "name": "Component Country of Origin",
+        "type": "enumerated",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Cost",
+        "name": "Cost",
+        "type": "number",
+        "group": "Pricing"
+      },
+      {
+        "id": "Description Brève",
+        "name": "Description Brève",
+        "type": "rich_text",
+        "group": "Contenu enrichi"
+      },
+      {
+        "id": "Description Longue",
+        "name": "Description Longue",
+        "type": "rich_text",
+        "group": "Contenu enrichi"
+      },
+      {
+        "id": "Description Moyen",
+        "name": "Description Moyen",
+        "type": "rich_text",
+        "group": "Contenu enrichi"
+      },
+      {
+        "id": "Dimension UOM",
+        "name": "Dimension UOM",
+        "type": "string",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Fabric Care",
+        "name": "Fabric Care",
+        "type": "rich_text",
+        "group": "Rich Content"
+      },
+      {
+        "id": "Fastener Type",
+        "name": "Fastener Type",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Feature Bullets",
+        "name": "Feature Bullets",
+        "type": "rich_text",
+        "group": "Rich Content"
+      },
+      {
+        "id": "Formatted Base Wholesale Price",
+        "name": "Formatted Base Wholesale Price",
+        "type": "string",
+        "group": "Pricing"
+      },
+      {
+        "id": "Formatted MSRP",
+        "name": "Formatted MSRP",
+        "type": "string",
+        "group": "Pricing"
+      },
+      {
+        "id": "Formatted Retail Price",
+        "name": "Formatted Retail Price",
+        "type": "string",
+        "group": "Pricing"
+      },
+      {
+        "id": "Garantie",
+        "name": "Garantie",
+        "type": "rich_text",
+        "group": "Contenu enrichi"
+      },
+      {
+        "id": "HTML Description",
+        "name": "HTML Description",
+        "type": "html",
+        "group": "Rich Content"
+      },
+      {
+        "id": "Handle Material",
+        "name": "Handle Material",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Handle Type",
+        "name": "Handle Type",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Inner Pack Height",
+        "name": "Inner Pack Height",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Inner Pack Length",
+        "name": "Inner Pack Length",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Inner Pack Q",
+        "name": "Inner Pack Q",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Inner Pack Weight",
+        "name": "Inner Pack Weight",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Inner Pack Width",
+        "name": "Inner Pack Width",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Item URL",
+        "name": "Item URL",
+        "type": "link",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Laptop pocket height",
+        "name": "Laptop pocket height",
+        "type": "number",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Laptop pocket length",
+        "name": "Laptop pocket length",
+        "type": "number",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Laptop pocket width",
+        "name": "Laptop pocket width",
+        "type": "number",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Lifestyle Images",
+        "name": "Lifestyle Images",
+        "type": "digital_asset",
+        "group": "Digital Assets"
+      },
+      {
+        "id": "Lining Type",
+        "name": "Lining Type",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Link",
+        "name": "Link",
+        "type": "link",
+        "group": "General"
+      },
+      {
+        "id": "Lock Type",
+        "name": "Lock Type",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Validation",
+        "name": "Validation",
+        "type": "string",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Long Description",
+        "name": "Long Description",
+        "type": "rich_text",
+        "group": "Rich Content"
+      },
+      {
+        "id": "Luggage setup complete",
+        "name": "Luggage setup complete",
+        "type": "boolean",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Main Image",
+        "name": "Main Image",
+        "type": "digital_asset",
+        "group": "Digital Assets"
+      },
+      {
+        "id": "Main Style Image",
+        "name": "Main Style Image",
+        "type": "digital_asset",
+        "group": "Digital Assets"
+      },
+      {
+        "id": "Manufacturer",
+        "name": "Manufacturer",
+        "type": "string",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Master Case Height",
+        "name": "Master Case Height",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Master Case Length",
+        "name": "Master Case Length",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Master Case Quantity",
+        "name": "Master Case Quantity",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Master Case UPC",
+        "name": "Master Case UPC",
+        "type": "string",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Master Case Weight",
+        "name": "Master Case Weight",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Master Case Width",
+        "name": "Master Case Width",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Material",
+        "name": "Material",
+        "type": "enumerated",
+        "group": "Rich Content"
+      },
+      {
+        "id": "Matériel",
+        "name": "Matériel",
+        "type": "enumerated",
+        "group": "Contenu enrichi"
+      },
+      {
+        "id": "Medium Description",
+        "name": "Medium Description",
+        "type": "rich_text",
+        "group": "Rich Content"
+      },
+      {
+        "id": "Number of Compartments",
+        "name": "Number of Compartments",
+        "type": "number",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Number of Pieces",
+        "name": "Number of Pieces",
+        "type": "number",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Number of Wheels",
+        "name": "Number of Wheels",
+        "type": "number",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Pattern",
+        "name": "Pattern",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Pet Size",
+        "name": "Pet Size",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Points de Balle",
+        "name": "Points de Balle",
+        "type": "string",
+        "group": "Contenu enrichi"
+      },
+      {
+        "id": "Product ID",
+        "name": "Product ID",
+        "type": "string",
+        "group": "General"
+      },
+      {
+        "id": "Product Line",
+        "name": "Product Line",
+        "type": "enumerated",
+        "group": "General"
+      },
+      {
+        "id": "Product Name",
+        "name": "Product Name",
+        "type": "string",
+        "group": "General"
+      },
+      {
+        "id": "Product Status",
+        "name": "Product Status",
+        "type": "enumerated",
+        "group": "General"
+      },
+      {
+        "id": "Product Videos",
+        "name": "Product Videos",
+        "type": "digital_asset",
+        "group": "Digital Assets"
+      },
+      {
+        "id": "Proposition 65 Warning",
+        "name": "Proposition 65 Warning",
+        "type": "boolean",
+        "group": "Regulatory"
+      },
+      {
+        "id": "Rank",
+        "name": "Rank",
+        "type": "number",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Ready for Syndication?",
+        "name": "Ready for Syndication?",
+        "type": "boolean",
+        "group": "Status"
+      },
+      {
+        "id": "Recycled Content",
+        "name": "Recycled Content",
+        "type": "string",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Retail pack quantity",
+        "name": "Retail pack quantity",
+        "type": "enumerated",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Sellable Package Height",
+        "name": "Sellable Package Height",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Sellable Package Height - Metric",
+        "name": "Sellable Package Height - Metric",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Sellable Package Length",
+        "name": "Sellable Package Length",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Sellable Package Length - Metric",
+        "name": "Sellable Package Length - Metric",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Sellable Package Weight",
+        "name": "Sellable Package Weight",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Sellable Package Weight - Metric",
+        "name": "Sellable Package Weight - Metric",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Sellable Package Width",
+        "name": "Sellable Package Width",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Sellable Package Width - Metric",
+        "name": "Sellable Package Width - Metric",
+        "type": "number",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Set Components",
+        "name": "Set Components",
+        "type": "string",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Short Description",
+        "name": "Short Description",
+        "type": "rich_text",
+        "group": "Rich Content"
+      },
+      {
+        "id": "Soins en Tissu",
+        "name": "Soins en Tissu",
+        "type": "string",
+        "group": "Contenu enrichi"
+      },
+      {
+        "id": "Spec Sheet",
+        "name": "Spec Sheet",
+        "type": "digital_asset",
+        "group": "Digital Assets"
+      },
+      {
+        "id": "Strap Length",
+        "name": "Strap Length",
+        "type": "number",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Style",
+        "name": "Style",
+        "type": "string",
+        "group": "General"
+      },
+      {
+        "id": "Tags",
+        "name": "Tags",
+        "type": "string",
+        "group": "Rich Content"
+      },
+      {
+        "id": "UPC",
+        "name": "UPC",
+        "type": "string",
+        "group": "General"
+      },
+      {
+        "id": "Usage",
+        "name": "Usage",
+        "type": "string",
+        "group": "Unassigned"
+      },
+      {
+        "id": "Variant Type",
+        "name": "Variant Type",
+        "type": "string",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "Warnings",
+        "name": "Warnings",
+        "type": "rich_text",
+        "group": "Rich Content"
+      },
+      {
+        "id": "Warranty",
+        "name": "Warranty",
+        "type": "rich_text",
+        "group": "Rich Content"
+      },
+      {
+        "id": "Weight UOM",
+        "name": "Weight UOM",
+        "type": "enumerated",
+        "group": "Shipping Detail"
+      },
+      {
+        "id": "Wheel Type",
+        "name": "Wheel Type",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "YouTube video",
+        "name": "YouTube video",
+        "type": "link",
+        "group": "Video Assets"
+      },
+      {
+        "id": "Zipper Type",
+        "name": "Zipper Type",
+        "type": "enumerated",
+        "group": "Extended Product Details"
+      },
+      {
+        "id": "eCommerce Description",
+        "name": "eCommerce Description",
+        "type": "rich_text",
+        "group": "eCommerce"
+      },
+      {
+        "id": "eCommerce field",
+        "name": "eCommerce field",
+        "type": "string",
+        "group": "Unassigned"
+      },
+      {
+        "id": "eCommerce Name",
+        "name": "eCommerce Name",
+        "type": "string",
+        "group": "eCommerce"
+      },
+      {
+        "id": "relation_type",
+        "name": "relation_type",
+        "type": "enumerated",
+        "group": "Unassigned"
+      }
+    ]
+}

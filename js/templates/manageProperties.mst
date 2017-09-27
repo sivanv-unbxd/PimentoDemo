@@ -11,66 +11,39 @@
         <div class="col-md-2">
             <div class="add-product">
                 <button class="add-product-btn" id="addProduct">
-                    <a href="#/addProduct" class="add-product-text">Add Property</a>
+                    <a href="javascript:void(0)" class="add-product-text">Add Property</a>
                 </button>
             </div>
         </div>
     </div>
-
     <div class="row">
         <div class="col-md-12">
             <div class="unbxd-table">
                 <div class="table-header">
                     <div class="table-row">
                         <div class="col1 property-col margin-left-20">
-                            <div class="property-name">Property</div></div>
+                            <div class="property-name">Property</div>
+                        </div>
                         <div class="col2 type-col">Type</div>
                         <div class="col3 group-col">Group</div>
-
                     </div>
                 </div>
                 <div class="table-body">
-                    <div class="table-row propertyRowActionHandler" id="property1">
-                        <div class="col1 property-col">
-                            <div class="property-name">Auto Focus Exposure</div>
+                    {{#properties}}
+                        <div class="table-row propertyRowActionHandler" id="{{id}}">
+                            <div class="col1 property-col">
+                                <div class="property-name">{{name}}</div>
+                            </div>
+                            <div class="col2 type-col">
+                                <div class="property-type"> {{type}}</div>
+                            </div>
+                            <div class="col3 group-col">
+                                <div class="property-group"> {{group}}</div>
+                            </div>
                         </div>
-                        <div class="col2 type-col">
-                            <div class="property-type"> String</div>
-                        </div>
-                        <div class="col3 group-col">
-                            <div class="property-group"> Technical</div>
-                        </div>
-                    </div>
-                    <div class="table-row propertyRowActionHandler" id="property2">
-                        <div class="col1 property-col">
-                            <div class="property-name">Auto Focus Exposure</div>
-                        </div>
-                        <div class="col2 type-col">
-                            <div class="property-type"> String</div>
-                        </div>
-                        <div class="col3 group-col">
-                            <div class="property-group"> Technical</div>
-                        </div>
-                    </div>
-                    <div class="table-row propertyRowActionHandler" id="property3">
-                        <div class="col1 property-col">
-                            <div class="property-name">Auto Focus Exposure</div>
-                        </div>
-                        <div class="col2 type-col">
-                            <div class="property-type"> String</div>
-                        </div>
-                        <div class="col3 group-col">
-                            <div class="property-group"> Technical</div>
-                        </div>
-                    </div>
-
+                    {{/properties}}
                 </div>
-
-
             </div>
-
         </div>
-
     </div>
-
 </div>

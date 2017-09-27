@@ -8,7 +8,7 @@ function setTabHighlight(ind, navbar){
 function loadTemplate(templatePath, destination, data, partial, callback) {
     $.when( $.get(templatePath, function (template) {
         let rendered;
-             rendered = Mustache.render(template, data, partial);
+        rendered = Mustache.render(template, data, partial);
         $('#'+ destination).html(rendered);
     })).done(callback)
 }

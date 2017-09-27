@@ -9,17 +9,19 @@
     </div>
 </div>
 
-<div class="container edit-property-container ">
+<div class="container edit-group-container ">
     <div class="row">
 
         <div class="col-md-10">
-            <div class="property-edit-header">
-                <a href="javascript:void(0)" onclick="window.location.hash = '#/manage/properties'; return false;">
+            <div class="group-edit-header">
+                <a href="javascript:void(0)" onclick="window.location.hash = '#/manage/groups'; return false;">
                     <span class="glyphicon glyphicon-arrow-left edit-back-btn"></span>
                 </a>
-                <span class="property-label">Property</span>
-                <span class="property-name">{{name}}</span>
+                <span class="group-label">Property</span>
+                <span class="group-name">{{name}}</span>
             </div>
+
+
 
         </div>
         <div class="col-md-2">
@@ -36,9 +38,10 @@
         <div class="col-md-2">
             <div class="edit-left-nav-section">
                 <div class="tab">
-                    <a href="{{path}}details" class="tablinks" onclick="openTab(event, 'Details')" >Details</a>
-                    <a href="{{path}}translation" class="tablinks" onclick="openTab(event, 'Translations')">Translations</a>
-                    <a href="{{path}}security" class="tablinks" onclick="openTab(event, 'Security')">Security</a>
+                    <a href="{{path}}details" class="tablinks" onclick="openTab(event, 'Details')">Details</a>
+                    <a href="{{path}}translation" class="tablinks"
+                       onclick="openTab(event, 'Translations')">Translations</a>
+                    <a href="{{path}}properties" class="tablinks" onclick="openTab(event, 'Properties')">Properties</a>
                     <a href="{{path}}history" class="tablinks" onclick="openTab(event, 'History')">History</a>
                 </div>
             </div>
@@ -50,70 +53,20 @@
                     Details
                 </div>
                 <div class="input-component">
-                    <div class="input-label">Property Name</div>
+                    <div class="input-label">Group Name</div>
                     <div class="input-feild">
-                        <input class="input-feild-input" type="text" value="{{name}}"/>
-                    </div>
-                </div>
-                <div class="input-component">
-                    <div class="input-label">Type</div>
-                    <div class="input-feild">
-                        <select title="Select your spell" class="selectpicker">
-                            <option data-icon="glyphicon glyphicon-eye-open" data-subtext="petrification">String
-                            </option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Number</option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Date</option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">AutoComplete
-                            </option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Boolean</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="input-component">
-                    <div class="input-label">Allow negative values</div>
-                    <div class="input-feild">
-                        <input class="toggle-trigger" checked type="checkbox" 
-                                >
-                    </div>
-                </div>
-                <div class="input-component">
-                    <div class="input-label">Allow negative values</div>
-                    <div class="input-feild">
-                        <input class="toggle-trigger" checked type="checkbox" 
-                                >
+                        <input class="input-feild-input" type="text" value="{{groupObj.name}}"/>
                     </div>
                 </div>
 
                 <div class="input-component">
-                    <div class="input-label">Maximum number</div>
+                    <div class="input-label">Comment for others</div>
                     <div class="input-feild">
-                        <input class="input-feild-input width-100" type="text"/>
+                        <textarea class="input-feild-text-area" cols="40" rows="4">Comments for others</textarea>
                     </div>
                 </div>
-                <div class="input-component">
-                    <div class="input-label">Minimum number</div>
-                    <div class="input-feild">
-                        <input class="input-feild-input width-100" type="text"/>
-                    </div>
-                </div>
-                <div class="input-component">
-                    <div class="input-label">Group</div>
-                    <div class="input-feild">
-                        <select title="Select your spell" class="selectpicker">
-                            <option data-icon="glyphicon glyphicon-eye-open" data-subtext="petrification">General
-                            </option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Technical</option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Marketing</option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Manufacturing
-                            </option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Media</option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Others</option>
-                        </select>
-                    </div>
-                </div>
-
-
             </div>
+
             <div id="Translations" class="tabcontent">
                 <div class="title">
                     Translation
@@ -121,175 +74,58 @@
                 <div class="input-component">
                     <div class="input-label">English</div>
                     <div class="input-feild">
-                        <input class="input-feild-input" type="text" value="{{name}}"/>
+                        <input class="input-feild-input" type="text" value="{{groupObj.name}}"/>
                     </div>
                 </div>
                 <div class="input-component">
                     <div class="input-label">French</div>
                     <div class="input-feild">
-                        <input class="input-feild-input" type="text" value="{{name}}"/>
+                        <input class="input-feild-input" type="text" value="{{groupObj.name}}"/>
                     </div>
                 </div>
                 <div class="input-component">
                     <div class="input-label">Spanish</div>
                     <div class="input-feild">
-                        <input class="input-feild-input" type="text" value="{{name}}"/>
+                        <input class="input-feild-input" type="text" value="{{groupObj.name}}"/>
                     </div>
                 </div>
 
 
             </div>
 
-            <div id="Security" class="tabcontent">
+            <div id="Properties" class="tabcontent">
                 <div class="title">
-                    Security
+                    Properties
+                    <span class="tag-properties">Tag more properties <span class="caret"></span></span>
                 </div>
+
                 <div class="unbxd-table">
                     <div class="table-header">
                         <div class="table-row">
-                            <div class="col default">
-                                <div class="default-val">Use Default</div>
+                            <div class="col property">
+                                <div class="property-val">Property</div>
                             </div>
-                            <div class="col manage">Manage</div>
-                            <div class="col read-only">Read Only</div>
-                            <div class="col hidden-prop">Hidden</div>
-                            <div class="col name">
-                                <div class="name-val">Name</div>
+                            <div class="col type">
+                                <div class="type-val">Type</div>
                             </div>
 
                         </div>
                     </div>
                     <div class="table-body">
-
+                        {{#groupObj.propertiesList}}
                         <div class="table-row ">
-                            <div class="col1 default">
-                                <div class="default-val">
-                                    <input type="checkbox" value="" checked disabled>
-                                </div>
+                            <div class="col1 property">
+                                <div class="property-val">{{name}}</div>
                             </div>
-                            <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" 
-                                        >
-                            </div>
-                            <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox"
-                                         >
-                            </div>
-                            <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox"
-                                         >
-
-                            </div>
-                            <div class="col3 name">
-                                <div class="name-val"> Administrator
-                                </div>
+                            <div class="col2 type">
+                                <div class="type-val">{{type}}</div>
                             </div>
                         </div>
-
-                        <div class="table-row ">
-                            <div class="col1 default">
-                                <div class="default-val">
-                                    <input type="checkbox" value="" checked >
-                                </div>
-                            </div>
-                            <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" 
-                                        >
-                            </div>
-                            <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox"
-                                         >
-                            </div>
-                            <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox"
-                                         >
-
-                            </div>
-                            <div class="col3 name">
-                                <div class="name-val"> Editors
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="table-row ">
-                            <div class="col1 default">
-                                <div class="default-val">
-                                    <input type="checkbox" value="" checked >
-                                </div>
-                            </div>
-                            <div class="col2 manage">
-                                <input class="toggle-trigger"  type="checkbox"
-                                         >
-                            </div>
-                            <div class="col3 read-only">
-                                <input class="toggle-trigger" checked type="checkbox" 
-                                        >
-                            </div>
-                            <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox"
-                                         >
-
-                            </div>
-                            <div class="col3 name">
-                                <div class="name-val"> Viewers
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="table-row ">
-                            <div class="col1 default">
-                                <div class="default-val">
-                                    <input type="checkbox" value="" checked >
-                                </div>
-                            </div>
-                            <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" 
-                                        >
-                            </div>
-                            <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox"
-                                         >
-                            </div>
-                            <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox"
-                                         >
-
-                            </div>
-                            <div class="col3 name">
-                                <div class="name-val"> 	Hidden Properties Test
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="table-row ">
-                            <div class="col1 default">
-                                <div class="default-val">
-                                    <input type="checkbox" value="" checked >
-                                </div>
-                            </div>
-                            <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" 
-                                        >
-                            </div>
-                            <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox"
-                                         >
-                            </div>
-                            <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox"
-                                         >
-
-                            </div>
-                            <div class="col3 name">
-                                <div class="name-val"> 	Marketing Team
-                                </div>
-                            </div>
-                        </div>
-
-
+                        {{/groupObj.propertiesList}}
                     </div>
                 </div>
             </div>
+
             <div id="History" class="tabcontent">
                 <div class="title">
                     History

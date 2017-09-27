@@ -6,9 +6,14 @@ $(document).ready(function () {
     loadHeader();
     loadFooter();
     let session = checkSession();
-    $.getJSON("js/data.json", function (json) {
-
+    let getProducts = $.getJSON("js/productsData.json", function (json) {
         HomeManager.setProductsList(json.products);
+    });
+    let getProperties = $.getJSON("js/propertiesData.json", function (json) {
+        HomeManager.setPropertiesList(json.properties);
+        HomeManager.setGroupsList(json.properties);
+    })
+    $.when(getProducts, getProperties).done(function () {
         app = $.sammy('#appContainer', function () {
             this.get('#/', function (context) {
                 loadHomeScreen();
@@ -25,17 +30,8 @@ $(document).ready(function () {
                 loadAssetsComponent();
             });
 
-            this.get('#/manage', function (context) {
-                loadManageComponent();
-            });
 
-            this.get('#/manage/properties', function (context) {
-                loadManageComponent(loadManageProperties);
-            });
 
-            this.get('#/manage/groups', function (context) {
-                loadManageComponent(loadManageGroups);
-            });
 
             this.get('#/addProduct', function (context) {
                 loadAddProductComponent();
@@ -44,14 +40,56 @@ $(document).ready(function () {
             this.get('#/editProduct/:id', function (context) {
                 loadAddProductComponent();
             });
-            this.get('#/manage/properties/edit/:id', function (context) {
-                loadEditPropertyComponent();
+
+
+
+            this.get('#/manage', function (context) {
+                window.location.hash = window.location.hash + "/properties";
+            });
+
+            this.get('#/manage/properties', function (context) {
+                loadManageComponent(loadManageProperties);
+            });
+            this.get('#/manage/properties/:id', function (context) {
+                window.location.hash = window.location.hash + "/details";
+            });
+            this.get('#/manage/properties/:id/details', function (context) {
+                loadEditPropertyComponent({tabInd: 1, id: context.params.id, path : context.path.replace("details", "")});
+            });
+            this.get('#/manage/properties/:id/translations', function (context) {
+                loadEditPropertyComponent({tabInd: 2, id: context.params.id, path : context.path.replace("translations", "")});
+            });
+            this.get('#/manage/properties/:id/security', function (context) {
+                loadEditPropertyComponent({tabInd: 3, id: context.params.id, path : context.path.replace("security", "")});
+            });
+            this.get('#/manage/properties/:id/history', function (context) {
+                loadEditPropertyComponent({tabInd: 4, id: context.params.id, path : context.path.replace("history", "")});
+            });
+
+            this.get('#/manage/groups', function (context) {
+                loadManageComponent(loadManageGroups);
+            });
+            this.get('#/manage/groups/:id', function (context) {
+                window.location.hash = window.location.hash + "/details";
+            });
+            this.get('#/manage/groups/:id/details', function (context) {
+                loadEditGroupComponent({tabInd: 1, id: context.params.id, path : context.path.replace("details", "")});
+            });
+            this.get('#/manage/groups/:id/translations', function (context) {
+                loadEditGroupComponent({tabInd: 2, id: context.params.id, path : context.path.replace("translations", "")});
+            });
+            this.get('#/manage/groups/:id/properties', function (context) {
+                loadEditGroupComponent({tabInd: 3, id: context.params.id, path : context.path.replace("properties", "")});
+            });
+            this.get('#/manage/groups/:id/history', function (context) {
+                loadEditGroupComponent({tabInd: 4, id: context.params.id, path : context.path.replace("history", "")});
             });
         });
         if (session) {
             app.run('#/overview');
         }
-    });
+    })
+
 
 });
 
@@ -211,24 +249,34 @@ function loadAssetsComponent() {
 
 function loadManageComponent(callback) {
 
+
     loadTemplate('js/templates/manage.mst', 'appContainer', {}, {}, callback);
     setTabHighlight(3, ".header-container .navbar-menu");
 
-    window.location.hash = '#/manage/properties';
+
 }
 
 function loadManageProperties() {
+    loadTemplate('js/templates/manageProperties.mst', 'manageSectionContainer',{properties :  HomeManager.getPropertiesList()});
     setTabHighlight(0, ".manage-container .navbar-menu");
-    loadTemplate('js/templates/manageProperties.mst', 'manageSectionContainer');
 
     $(document).on("click", ".propertyRowActionHandler", function (el) {
-        window.location.hash = '#/manage/properties/edit/' + this.id;
+        window.location.hash = '#/manage/properties/' + this.id.split(" ").join("-");
     });
 }
 
 function loadManageGroups() {
+
+    loadTemplate('js/templates/manageGroups.mst', 'manageSectionContainer', {groups :  HomeManager.getGroupsList()})
     setTabHighlight(1, ".manage-container .navbar-menu");
-    loadTemplate('js/templates/manageGroups.mst', 'manageSectionContainer')
+
+    $(document).on("click", ".toggleGroupProps", function (el) {
+        $(this).parent().toggleClass('open').toggleClass('closed');
+    });
+    $(document).on("click", ".groupRowActionHandler", function (el) {
+        window.location.hash = '#/manage/groups/' + this.id
+    });
+
 }
 
 function loadAddProductComponent() {
@@ -236,16 +284,49 @@ function loadAddProductComponent() {
     setTabHighlight(1, ".header-container .navbar-menu");
 }
 
-function loadEditPropertyComponent() {
-    loadTemplate('js/templates/editProperty.mst', 'appContainer', {}, {});
+function loadEditPropertyComponent(meta) {
+    let metaData = meta;
+    let obj = {
+        name : meta.id.split("-").join(" "),
+        urlParam: meta.id,
+        path : meta.path
+    }
+    loadTemplate('js/templates/editProperty.mst', 'appContainer', obj, {});
     setTabHighlight(3, ".header-container .navbar-menu");
     setTimeout(function () {
-        $(".edit-left-nav-section .tablinks:nth-child(1)").click();
-        $('.toggle-trigger').bootstrapToggle();
+        $(".edit-left-nav-section .tablinks:nth-child(" + metaData.tabInd + ")").click();
+        $('.toggle-trigger').bootstrapToggle({
+            on: 'Yes',
+            off: 'No'
+        });
         $('select.selectpicker').selectpicker({
             caretIcon: 'glyphicon glyphicon-menu-down'
         });
-    },100)
+    }, 100)
+
+
+}
+
+function loadEditGroupComponent(meta) {
+    let metaData = meta;
+    let id = meta.id
+    let obj = {
+        urlParam: meta.id,
+        path : meta.path,
+        groupObj : HomeManager.getGroupById(id)
+    }
+    loadTemplate('js/templates/editGroup.mst', 'appContainer', obj, {});
+    setTabHighlight(3, ".header-container .navbar-menu");
+    setTimeout(function () {
+        $(".edit-left-nav-section .tablinks:nth-child(" + metaData.tabInd + ")").click();
+        $('.toggle-trigger').bootstrapToggle({
+            on: 'Yes',
+            off: 'No'
+        });
+        $('select.selectpicker').selectpicker({
+            caretIcon: 'glyphicon glyphicon-menu-down'
+        });
+    }, 100)
 
 
 }

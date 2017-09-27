@@ -14,6 +14,7 @@
 @import "layouts/manageProperties.less";
 @import "layouts/manageGroups.less";
 @import "layouts/editProperty.less";
+@import "layouts/editGroup.less";
 
 
 
@@ -129,7 +130,10 @@ body{
       vertical-align: middle;
       text-align: left;
     }
+    &:hover {
+      background-color: #f6f7f9;
 
+    }
   }
   .table-header {
 
@@ -160,8 +164,274 @@ body{
   .table-body {
     border: solid 1px #e0e7ee;
     border-top-width: 0;
-    height: 800px;
+    height: 750px;
     overflow: scroll;
   }
 
 }
+
+
+.edit-panel-component {
+  margin: 30px 0 0 0;
+  .edit-left-nav-section {
+    .tab {
+      float: left;
+      width: 100%;
+      height: 300px;
+    }
+    .tab a {
+      width: 100%;
+      height: 19px;
+      display: block;
+      outline: 0;
+      background: none;
+      border: none;
+      font-size: 14px;
+      color: #445870;
+      margin: 10px;
+      text-align: right;
+      padding-right: 20px;
+
+      &:hover {
+        font-weight: 500;
+        color: #445870;
+        text-decoration: none;
+      }
+      &.active {
+        font-weight: 500;
+        color: #445870;
+      }
+    }
+  }
+
+  .edit-container {
+    padding: 0;
+    .tabcontent {
+      width: 100%;
+      min-height: 700px;
+      border-radius: 3px;
+      background-color: #ffffff;
+      border: solid 1px #e0e7ee;
+      display: none;
+    }
+
+    .title {
+      height: 22px;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: left;
+      color: #445870;
+      margin: 20px 0 0 35px;
+      display: block;
+    }
+
+    .input-component {
+      display: block;
+      height: 60px;
+      margin: 25px 0 0 35px;
+      .input-label {
+        height: 17px;
+        opacity: 0.5;
+        font-size: 12px;
+        text-align: left;
+        color: #3c3c3c;
+      }
+      .input-feild {
+        height: 40px;
+        display: block;
+        margin-top: 10px;
+        .input-feild-input {
+          width: 210px;
+          height: 40px;
+          display: block;
+          border-radius: 3px;
+          background-color: #ffffff;
+          border: solid 1px #b0bbca;
+          outline: none;
+          padding: 10px 15px;
+          font-size: 14px;
+          font-weight: 500;
+          text-align: left;
+          color: #3c3c3c;
+
+          &.width-100 {
+            width: 80px;
+          }
+
+        }
+        .input-feild-select {
+          width: 210px;
+          height: 40px;
+          display: block;
+          border-radius: 3px;
+          background-color: #ffffff;
+          border: solid 1px #b0bbca;
+          outline: none;
+        }
+        .input-feild-text-area {
+          width: 808px;
+          height: 119px;
+          border-radius: 3px;
+          background-color: #ffffff;
+          border: solid 1px #b0bbca;
+          outline: none;
+          font-size: 14px;
+          text-align: left;
+          color: #b0bbca;
+          padding: 10px;
+        }
+
+        .bootstrap-select {
+          width: 210px;
+
+          height: 40px;
+          color: #3c3c3c;
+          button {
+            background: none;
+            height: 40px;
+            outline: none !important;
+
+            small {
+              display: none;
+            }
+          }
+
+          .dropdown-menu {
+            li {
+              height: 40px;
+              a {
+                outline: none;
+                &:focus {
+                  background: none;
+                }
+              }
+              small {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .unbxd-table {
+
+      .table-body {
+        border: none;
+        height: 600px;
+        .table-row {
+          border-bottom: solid 1px #f6f7f9;
+        }
+      }
+      .version {
+        width: 10%;
+        .version-val {
+          margin-left: 20px;
+        }
+      }
+      .editor {
+        width: 15%;
+        .editor-val {
+
+        }
+      }
+      .updated-on {
+        width: 20%;
+        .updated-on-val {
+
+        }
+      }
+      .old-value {
+        width: 20%;
+        .old-value-val {
+          margin-left: 10px;
+        }
+      }
+      .new-value {
+        width: 20%;
+        .new-value-val {
+          margin-left: 10px;
+        }
+      }
+
+      .default {
+        width: 10%;
+        .default-val {
+          margin-left: 20px;
+        }
+      }
+      .property{
+        width: 60%;
+        .property-val{
+          margin-left: 20px;
+          font-size: 16px;
+          text-align: left;
+          color: #445870;
+        }
+      }
+      .type{
+        width: 30%;
+        .type-val{
+
+          font-size: 14px;
+          text-align: left;
+          color: #445870;
+        }
+      }
+
+      .manage {
+        width: 10%;
+
+      }
+      .read-only {
+        width: 10%;
+
+      }
+      .hidden-prop {
+        width: 10%;
+
+      }
+      .name {
+        width: 50%;
+        .name-val {
+          margin-left: 20px;
+        }
+      }
+    }
+
+    #Properties{
+      .table-body{
+        .table-row{
+          height: 55px;
+          margin: 0;
+          .property-val, .type-val{
+            margin-top: 20px;
+          }
+        }
+      }
+
+    }
+    #History{
+      .table-body{
+        .table-row{
+          height: 240px;
+          margin: 0;
+          .version , .editor ,.updated-on , .old-value , .new-value , .new-value-val {
+            margin-top: 20px;
+          }
+        }
+      }
+
+    }
+
+    #Security{
+      .table-row{
+        &:hover{
+          background: none;
+        }
+      }
+    }
+  }
+
+}
+

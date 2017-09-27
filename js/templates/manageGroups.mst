@@ -11,67 +11,47 @@
         <div class="col-md-2">
             <div class="add-product">
                 <button class="add-product-btn" id="addProduct">
-                    <a href="#/addProduct" class="add-product-text">Add Group</a>
+                    <a href="javascript:void(0)" class="add-product-text">Add Group</a>
                 </button>
             </div>
         </div>
     </div>
-
-
     <div class="row">
         <div class="col-md-12">
             <div class="unbxd-table">
                 <div class="table-header">
                     <div class="table-row">
-                        <div class="col1 group-col"> <div class="group-details">Group Name</div></div>
+                        <div class="col1 group-col">
+                            <div class="group-details">Group Name</div>
+                        </div>
                         <div class="col2 comments-col">Comment</div>
-
                     </div>
                 </div>
                 <div class="table-body">
-                    <div class="table-row">
+                    {{#groups}}
+                    <div class="table-row groupRowActionHandler" id="{{id}}" comments = "{{comments}}">
                         <div class="col1 group-col">
                             <div class="group-details">
-                                <div class="group-name">Marketing</div>
-                                <div class="group-props">Properties(5)
+                                <div class="group-name-summary closed">
+                                    <span class="glyphicon glyphicon-triangle-right toggleGroupProps" ></span>
+                                    <span class="glyphicon glyphicon-triangle-bottom toggleGroupProps" ></span>
+                                    <span class="group-name">{{name}} ({{propertiesLength}})</span>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col2 comments-col">
-                            <div class="group-comments"> Some Comments Here</div>
-                        </div>
+                                <ul class="group-props-list">
+                                    {{#propertiesList}}
+                                    <li class="group-props">{{name}} <span class="group-prop-type">({{type}})</span></li>
+                                    {{/propertiesList}}
+                                </ul>
 
-                    </div>
-                    <div class="table-row">
-                        <div class="col1 group-col">
-                            <div class="group-details">
-                                <div class="group-name">Technical</div>
-                                <div class="group-props">Properties(5)</div>
                             </div>
                         </div>
                         <div class="col2 comments-col">
-                            <div class="group-comments"> Some Comments Here</div>
+                            <div class="group-comments"> {{comments}}</div>
                         </div>
                     </div>
-                    <div class="table-row">
-                        <div class="col1 group-col">
-                            <div class="group-details">
-                                <div class="group-name">Manufacturing</div>
-                                <div class="group-props">Properties(5)</div>
-                            </div>
-                        </div>
-                        <div class="col2 comments-col">
-                            <div class="group-comments"> Some Comments Here</div>
-                        </div>
-                    </div>
+                    {{/groups}}
                 </div>
-
-
             </div>
-
         </div>
-
     </div>
-
-
 </div>
