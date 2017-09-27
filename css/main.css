@@ -818,52 +818,52 @@
   cursor: pointer;
   position: relative;
 }
-.listing-table .comfortable .table-row {
+.listing-table.comfortable .table-row {
   height: 180px;
 }
-.listing-table .cozy .table-row {
+.listing-table.cozy .table-body .table-row {
   height: 105px;
 }
-.listing-table .cozy .table-row .col1,
-.listing-table .cozy .table-row .col2,
-.listing-table .cozy .table-row .col3,
-.listing-table .cozy .table-row .col4,
-.listing-table .cozy .table-row .col5,
-.listing-table .cozy .table-row .col6,
-.listing-table .cozy .table-row .col7,
-.listing-table .cozy .table-row .col8 {
+.listing-table.cozy .table-body .table-row .col1,
+.listing-table.cozy .table-body .table-row .col2,
+.listing-table.cozy .table-body .table-row .col3,
+.listing-table.cozy .table-body .table-row .col4,
+.listing-table.cozy .table-body .table-row .col5,
+.listing-table.cozy .table-body .table-row .col6,
+.listing-table.cozy .table-body .table-row .col7,
+.listing-table.cozy .table-body .table-row .col8 {
   margin-top: 20px;
 }
-.listing-table .cozy .table-row .product-thumbnail {
+.listing-table.cozy .table-body .table-row .product-thumbnail {
   width: 67px;
   height: 67px;
 }
-.listing-table .cozy .table-row .product-thumbnail .thumbnail-img {
+.listing-table.cozy .table-body .table-row .product-thumbnail .thumbnail-img {
   width: 65px;
   height: 65px;
 }
-.listing-table .compact .table-row {
+.listing-table.compact .table-body .table-row {
   height: 76px;
 }
-.listing-table .compact .table-row .col1,
-.listing-table .compact .table-row .col2,
-.listing-table .compact .table-row .col3,
-.listing-table .compact .table-row .col4,
-.listing-table .compact .table-row .col5,
-.listing-table .compact .table-row .col6,
-.listing-table .compact .table-row .col7,
-.listing-table .compact .table-row .col8 {
+.listing-table.compact .table-body .table-row .col1,
+.listing-table.compact .table-body .table-row .col2,
+.listing-table.compact .table-body .table-row .col3,
+.listing-table.compact .table-body .table-row .col4,
+.listing-table.compact .table-body .table-row .col5,
+.listing-table.compact .table-body .table-row .col6,
+.listing-table.compact .table-body .table-row .col7,
+.listing-table.compact .table-body .table-row .col8 {
   margin-top: 17px;
 }
-.listing-table .compact .table-row .product-thumbnail {
+.listing-table.compact .table-body .table-row .product-thumbnail {
   width: 46px;
   height: 46px;
 }
-.listing-table .compact .table-row .product-thumbnail .thumbnail-img {
+.listing-table.compact .table-body .table-row .product-thumbnail .thumbnail-img {
   width: 44px;
   height: 44px;
 }
-.listing-table .compact .table-row .product-details .product-name {
+.listing-table.compact .table-body .table-row .product-details .product-name {
   max-height: 22px;
   white-space: nowrap;
 }
