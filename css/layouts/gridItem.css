@@ -10,11 +10,11 @@
   width: 370px;
   height: 263px;
   background-color: #f6f7f9;
-  position: absolute;
+  position: relative;
   display: block;
 }
 .grid-item .product-image .thumbnail-img {
-  width: 370px;
+  width: 367px;
   height: 263px;
   position: relative;
   display: block;
@@ -23,9 +23,10 @@
   width: 370px;
   height: 263px;
   background-color: rgba(205, 215, 228, 0.44);
-  position: absolute;
-  display: none;
+  position: relative;
+  visibility: hidden;
   pointer-events: auto;
+  top: -263px;
 }
 .grid-item .product-mask .editItem {
   width: 40px;
@@ -40,6 +41,7 @@
   border: solid 1px #e0e7ee;
   vertical-align: middle;
   color: #445870;
+  cursor: pointer;
 }
 .grid-item .product-mask .deleteItem {
   background-image: url(../../img/deleteItem.png);
@@ -68,7 +70,7 @@
   background-image: url(../../img/deleteItemHover.png);
 }
 .grid-item:hover .product-mask {
-  display: block;
+  visibility: visible;
 }
 .grid-item.selected .product-mask {
   background-color: rgba(48, 228, 51, 0.51);
@@ -79,7 +81,7 @@
   width: 370px;
   height: 141px;
   position: relative;
-  top: 263px;
+  top: -260px;
 }
 .grid-item .product-details .product-name {
   position: relative;
@@ -200,12 +202,13 @@
 .cozy .grid-item .product-mask {
   width: 278px;
   height: 210px;
+  top: -210px;
 }
 .cozy .grid-item .product-details {
   display: block;
   width: 280px;
   height: 122px;
-  top: 210px;
+  top: -215px;
 }
 .cozy .grid-item .product-details .product-name {
   margin: 20px 0 0 20px;
@@ -233,12 +236,13 @@
 .compact .grid-item .product-mask {
   width: 222px;
   height: 210px;
+  top: -210px;
 }
 .compact .grid-item .product-details {
   display: block;
   width: 224px;
   height: 88px;
-  top: 210px;
+  top: -215px;
 }
 .compact .grid-item .product-details .product-name {
   margin: 10px 0 0 20px;

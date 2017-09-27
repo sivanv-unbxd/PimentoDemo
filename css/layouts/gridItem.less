@@ -11,11 +11,11 @@
     width: 370px;
     height: 263px;
     background-color: #f6f7f9;
-    position: absolute;
+    position: relative;
 
     display: block;
     .thumbnail-img {
-      width: 370px;
+      width: 367px;
       height: 263px;
       position: relative;
       display: block;
@@ -26,9 +26,10 @@
     width: 370px;
     height: 263px;
     background-color: rgba(205,215,228,0.44);
-    position: absolute;
-    display: none;
+    position: relative;
+    visibility: hidden;
     pointer-events: auto;
+    top: -263px;
 
     .editItem{
       width: 40px;
@@ -43,6 +44,7 @@
       border: solid 1px #e0e7ee;
       vertical-align: middle;
       color: #445870;
+      cursor: pointer;
       &:hover{
         //background-image: url(../../img/editItemHover.png);
       }
@@ -79,7 +81,7 @@
   }
   &:hover {
     .product-mask {
-      display: block;
+     visibility: visible;
     }
   }
   &.selected{
@@ -93,7 +95,7 @@
     width: 370px;
     height: 141px;
     position: relative;
-    top: 263px;
+    top: -260px;
 
     .product-name {
       position: relative;
@@ -227,12 +229,13 @@
   .product-mask {
     width: 278px;
     height: 210px;
+    top: -210px;
   }
   .product-details {
     display: block;
     width: 280px;
     height: 122px;
-    top: 210px;
+    top: -215px;
     .product-name {
       margin: 20px 0 0 20px;
       width: 200px;
@@ -263,12 +266,13 @@
   .product-mask {
     width: 222px;
     height: 210px;
+    top: -210px;
   }
   .product-details {
     display: block;
     width: 224px;
     height: 88px;
-    top: 210px;
+    top: -215px;
     .product-name {
       margin: 10px 0 0 20px;
       width: 170px;
