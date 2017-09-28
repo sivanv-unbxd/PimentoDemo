@@ -373,7 +373,8 @@ function loadEditPropertyComponent(meta) {
     loadTemplate('js/templates/editProperty.mst', 'appContainer', obj, {});
     setTabHighlight(3, ".header-container .navbar-menu");
     setTimeout(function () {
-        $(".edit-left-nav-section .tablinks:nth-child(" + metaData.tabInd + ")").click();
+        // $(".edit-left-nav-section .tablinks:nth-child(" + metaData.tabInd + ")").click();
+        openTab(metaData.tabInd);
         $('.toggle-trigger').bootstrapToggle({
             on: 'Yes',
             off: 'No'
@@ -413,7 +414,7 @@ function loadEditPropertyComponent(meta) {
                 }
             }
         })
-    }, 500)
+    }, 200)
 
 
 }
@@ -429,7 +430,8 @@ function loadEditGroupComponent(meta) {
     loadTemplate('js/templates/editGroup.mst', 'appContainer', obj, {});
     setTabHighlight(3, ".header-container .navbar-menu");
     setTimeout(function () {
-        $(".edit-left-nav-section .tablinks:nth-child(" + metaData.tabInd + ")").click();
+        // $(".edit-left-nav-section .tablinks:nth-child(" + metaData.tabInd + ")").click();
+        openTab(metaData.tabInd)
         $('.toggle-trigger').bootstrapToggle({
             on: 'Yes',
             off: 'No'
@@ -437,7 +439,7 @@ function loadEditGroupComponent(meta) {
         $('select.selectpicker').selectpicker({
             caretIcon: 'glyphicon glyphicon-menu-down'
         });
-    }, 500)
+    }, 200)
 
 
 }

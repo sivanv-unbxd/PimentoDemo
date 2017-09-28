@@ -14,7 +14,20 @@ function loadTemplate(templatePath, destination, data, partial, callback) {
 }
 
 
-function openTab(evt, tabName) {
+// function openTab(evt, tabName) {
+//     let i, tabcontent, tablinks;
+//     tabcontent = document.getElementsByClassName("tabcontent");
+//     for (i = 0; i < tabcontent.length; i++) {
+//         tabcontent[i].style.display = "none";
+//     }
+//     tablinks = document.getElementsByClassName("tablinks");
+//     for (i = 0; i < tablinks.length; i++) {
+//         tablinks[i].className = tablinks[i].className.replace(" active", "");
+//     }
+//     document.getElementById(tabName).style.display = "block";
+//     evt.target.className += " active";
+// }
+function openTab(ind) {
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -24,6 +37,8 @@ function openTab(evt, tabName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(tabName).style.display = "block";
-    evt.target.className += " active";
+    // document.getElementById(tabName).style.display = "block";
+    // evt.target.className += " active";
+    $(".edit-left-nav-section .tablinks:nth-child(" + ind + ")").className  += " active";
+    $(".edit-container .tabcontent:nth-child(" + ind + ")").show();
 }

@@ -36,10 +36,10 @@
         <div class="col-md-2">
             <div class="edit-left-nav-section">
                 <div class="tab">
-                    <a href="{{path}}details" class="tablinks" onclick="openTab(event, 'Details')" >Details</a>
-                    <a href="{{path}}translation" class="tablinks" onclick="openTab(event, 'Translations')">Translations</a>
-                    <a href="{{path}}security" class="tablinks" onclick="openTab(event, 'Security')">Security</a>
-                    <a href="{{path}}history" class="tablinks" onclick="openTab(event, 'History')">History</a>
+                    <a href="{{path}}details" class="tablinks"  >Details</a>
+                    <a href="{{path}}translations" class="tablinks" >Translations</a>
+                    <a href="{{path}}security" class="tablinks" >Security</a>
+                    <a href="{{path}}history" class="tablinks" >History</a>
                 </div>
             </div>
         </div>
