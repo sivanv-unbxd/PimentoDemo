@@ -59,13 +59,13 @@
                     <div class="input-label">Type</div>
                     <div class="input-feild">
                         <select title="Select your spell" class="selectpicker">
-                            <option data-icon="glyphicon glyphicon-eye-open" data-subtext="petrification">String
+                            <option data-icon="glyphicon glyphicon-sort-by-alphabet" data-subtext="petrification">String
                             </option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Number</option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Date</option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">AutoComplete
+                            <option data-icon="glyphicon glyphicon-sort-by-order" data-subtext="area damage">Number</option>
+                            <option data-icon="glyphicon glyphicon-calendar" data-subtext="area damage">Date</option>
+                            <option data-icon="glyphicon glyphicon-edit" data-subtext="area damage">AutoComplete
                             </option>
-                            <option data-icon="glyphicon glyphicon-fire" data-subtext="area damage">Boolean</option>
+                            <option data-icon="glyphicon glyphicon-check" data-subtext="area damage">Boolean</option>
                         </select>
                     </div>
                 </div>

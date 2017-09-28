@@ -1,0 +1,7 @@
+{{#meta.tableView}}
+{{> productListView}}
+{{/meta.tableView}}
+
+{{^meta.tableView}}
+{{> productGridView}}
+{{/meta.tableView}}

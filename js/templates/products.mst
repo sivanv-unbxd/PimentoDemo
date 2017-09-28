@@ -19,7 +19,7 @@
         <div class="col-md-2">
             <div class="products-search">
                 <span class="search-icon"></span>
-                <input type="text" class="search-input" placeholder="Search"/>
+                <input type="text" class="search-input jsProductsSrch" placeholder="Search"/>
             </div>
         </div>
         <div class="col-md-4">
@@ -101,14 +101,6 @@
         </div>
 
     </div>
-    {{#meta.tableView}}
-        {{> productListView}}
-    {{/meta.tableView}}
-
-    {{^meta.tableView}}
-        {{> productGridView}}
-    {{/meta.tableView}}
-
-
+    <div id="productsListingContainer"></div>
 
 </div>

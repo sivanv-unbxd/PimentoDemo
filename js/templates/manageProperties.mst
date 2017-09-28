@@ -3,7 +3,7 @@
         <div class="col-md-2">
             <div class="products-search">
                 <span class="search-icon"></span>
-                <input type="text" class="search-input" placeholder="Search"/>
+                <input type="text" class="search-input jsPropertiesSrch" placeholder="Search"/>
             </div>
         </div>
         <div class="col-md-8">
@@ -18,35 +18,7 @@
     </div>
     <div class="row">
         <div class="col-md-12">
-            <div class="unbxd-table">
-                <div class="table-header">
-                    <div class="table-row">
-                        <div class="col1 property-col margin-left-20">
-                            <div class="property-name">Property</div>
-                        </div>
-                        <div class="col2 type-col">Type</div>
-                        <div class="col3 group-col">Group</div>
-                    </div>
-                </div>
-                <div class="table-body">
-                    {{#properties}}
-                        <div class="table-row propertyRowActionHandler" id="{{id}}">
-                            <div class="col1 property-col">
-                                <div class="property-name">{{name}}</div>
-                            </div>
-                            <div class="col2 type-col">
-                                <div class="property-type"> {{type}}</div>
-                            </div>
-                            <div class="col3 group-col">
-                                <div class="property-group"> {{group}}</div>
-                            </div>
-                            <div class="col4 actions-col">
-                                <span class=" glyphicon glyphicon-pencil editProperty" id="{{id}}"></span>
-                            </div>
-                        </div>
-                    {{/properties}}
-                </div>
-            </div>
+            <div class="unbxd-table" id="jsPropertiesList"></div>
         </div>
     </div>
 </div>
