@@ -414,7 +414,7 @@ function loadEditPropertyComponent(meta) {
                 }
             }
         })
-    }, 200)
+    }, 400)
 
 
 }
@@ -439,7 +439,7 @@ function loadEditGroupComponent(meta) {
         $('select.selectpicker').selectpicker({
             caretIcon: 'glyphicon glyphicon-menu-down'
         });
-    }, 200)
+    }, 400)
 
 
 }
