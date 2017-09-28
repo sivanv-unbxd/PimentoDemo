@@ -19,15 +19,40 @@
   display: block;
   box-sizing: content-box;
 }
+.manage-groups-container .unbxd-table .table-row.groupRowActionHandler .editGroup {
+  border: solid 1px #e0e7ee;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+}
+.manage-groups-container .unbxd-table .table-row.groupRowActionHandler:hover .editGroup {
+  display: block;
+}
+.manage-groups-container .unbxd-table .table-row.groupRowActionHandler .col1 {
+  height: auto;
+}
 .manage-groups-container .unbxd-table .table-row:hover {
   background-color: #f6f7f9;
 }
 .manage-groups-container .unbxd-table .table-row .group-col {
   width: 40%;
+  vertical-align: text-top;
 }
 .manage-groups-container .unbxd-table .table-row .group-col .group-details {
   margin-left: 20px;
   display: block;
+}
+.manage-groups-container .unbxd-table .table-row .group-col .group-details.open .group-name-summary span:nth-child(1) {
+  display: none;
+}
+.manage-groups-container .unbxd-table .table-row .group-col .group-details.open .group-props-list {
+  display: block;
+}
+.manage-groups-container .unbxd-table .table-row .group-col .group-details.closed .group-name-summary span:nth-child(2) {
+  display: none;
+}
+.manage-groups-container .unbxd-table .table-row .group-col .group-details.closed .group-props-list {
+  display: none;
 }
 .manage-groups-container .unbxd-table .table-row .group-col .group-details .group-name-summary {
   display: block;
@@ -36,12 +61,6 @@
   font-weight: 500;
   text-align: left;
   color: #445870;
-}
-.manage-groups-container .unbxd-table .table-row .group-col .group-details .group-name-summary.open span:nth-child(1) {
-  display: none;
-}
-.manage-groups-container .unbxd-table .table-row .group-col .group-details .group-name-summary.closed span:nth-child(2) {
-  display: none;
 }
 .manage-groups-container .unbxd-table .table-row .group-col .group-details .group-name-summary .group-name {
   display: inline-block;
@@ -61,15 +80,13 @@
 .manage-groups-container .unbxd-table .table-row .group-col .group-details .group-props-list .group-props .group-prop-type {
   color: #8ca0b3;
 }
-.manage-groups-container .unbxd-table .table-row .group-col .group-details .group-name-summary.closed ~ .group-props-list {
-  display: none;
-}
-.manage-groups-container .unbxd-table .table-row .group-col .group-details .group-name-summary.open ~ .group-props-list {
-  display: block;
-}
 .manage-groups-container .unbxd-table .table-row .comments-col {
   width: 55%;
+  vertical-align: text-top;
 }
 .manage-groups-container .unbxd-table .table-body .table-row {
   padding: 20px 0;
+}
+.manage-groups-container .toggleGroupProps {
+  cursor: pointer;
 }

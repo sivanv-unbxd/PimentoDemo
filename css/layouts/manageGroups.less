@@ -20,15 +20,54 @@ height: auto;
       display: block;
       box-sizing: content-box;
 
+      &.groupRowActionHandler {
+        .editGroup {
+          border: solid 1px #e0e7ee;
+          padding: 10px;
+          cursor: pointer;
+          display: none;
+        }
+        &:hover {
+          .editGroup {
+            display: block;
+          }
+        }
+        .col1 {
+          height: auto;
+        }
+      }
+
       &:hover {
         background-color: #f6f7f9;
       }
       .group-col {
         width: 40%;
+        vertical-align: text-top;
 
         .group-details {
           margin-left: 20px;
           display: block;
+
+          &.open {
+            .group-name-summary {
+              span:nth-child(1) {
+                display: none;
+              }
+            }
+            .group-props-list{
+              display: block;
+            }
+          }
+          &.closed {
+            .group-name-summary {
+              span:nth-child(2) {
+                display: none;
+              }
+            }
+            .group-props-list{
+              display: none;
+            }
+          }
 
           .group-name-summary {
             display: block;
@@ -37,16 +76,6 @@ height: auto;
             font-weight: 500;
             text-align: left;
             color: #445870;
-            &.open {
-              span:nth-child(1) {
-                display: none;
-              }
-            }
-            &.closed {
-              span:nth-child(2) {
-                display: none;
-              }
-            }
 
             .group-name {
               display: inline-block;
@@ -68,19 +97,12 @@ height: auto;
               }
             }
           }
-          .group-name-summary.closed ~ .group-props-list{
-            display: none;
-          }
-          .group-name-summary.open ~ .group-props-list{
-            display: block;
-          }
-
         }
       }
       .comments-col {
         width: 55%;
+        vertical-align: text-top;
         .group-comments {
-
         }
       }
 
@@ -94,5 +116,8 @@ height: auto;
 
   }
 
+  .toggleGroupProps {
+    cursor: pointer;
+  }
 }
 
