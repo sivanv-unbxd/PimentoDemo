@@ -1,0 +1,191 @@
+.edit-property-container .property-edit-header .edit-back-btn {
+  color: #b0bbca;
+  width: 50px;
+  font-size: 14px;
+  margin-right: 10px;
+  text-align: right;
+}
+.edit-property-container .property-edit-header .property-label {
+  font-weight: normal;
+  color: #b0bbca;
+  font-size: 18px;
+  text-align: left;
+  margin-right: 10px;
+}
+.edit-property-container .property-edit-header .property-name {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  color: #445870;
+}
+.edit-panel-component {
+  margin: 30px 0 0 0;
+}
+.edit-panel-component .edit-left-nav-section .tab {
+  float: left;
+  width: 100%;
+  height: 300px;
+}
+.edit-panel-component .edit-left-nav-section .tab a {
+  width: 100%;
+  height: 19px;
+  display: block;
+  outline: 0;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #445870;
+  margin: 10px;
+  text-align: right;
+  padding-right: 20px;
+}
+.edit-panel-component .edit-left-nav-section .tab a:hover {
+  font-weight: 500;
+  color: #445870;
+  text-decoration: none;
+}
+.edit-panel-component .edit-left-nav-section .tab a.active {
+  font-weight: 500;
+  color: #445870;
+}
+.edit-panel-component .edit-container {
+  padding: 0;
+}
+.edit-panel-component .edit-container .tabcontent {
+  width: 100%;
+  min-height: 700px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #e0e7ee;
+  display: none;
+}
+.edit-panel-component .edit-container .title {
+  height: 22px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: left;
+  color: #445870;
+  margin: 20px 0 0 35px;
+  display: block;
+}
+.edit-panel-component .edit-container .input-component {
+  display: block;
+  height: 60px;
+  margin: 25px 0 0 35px;
+}
+.edit-panel-component .edit-container .input-component .input-label {
+  height: 17px;
+  opacity: 0.5;
+  font-size: 12px;
+  text-align: left;
+  color: #3c3c3c;
+}
+.edit-panel-component .edit-container .input-component .input-feild {
+  height: 40px;
+  display: block;
+  margin-top: 10px;
+}
+.edit-panel-component .edit-container .input-component .input-feild .input-feild-input {
+  width: 210px;
+  height: 40px;
+  display: block;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #b0bbca;
+  outline: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: left;
+  color: #3c3c3c;
+}
+.edit-panel-component .edit-container .input-component .input-feild .input-feild-input.width-100 {
+  width: 80px;
+}
+.edit-panel-component .edit-container .input-component .input-feild .input-feild-select {
+  width: 210px;
+  height: 40px;
+  display: block;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #b0bbca;
+  outline: none;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select {
+  width: 210px;
+  height: 40px;
+  color: #3c3c3c;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select button {
+  background: none;
+  height: 40px;
+  outline: none !important;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select button small {
+  display: none;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select .dropdown-menu li {
+  height: 40px;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select .dropdown-menu li a {
+  outline: none;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select .dropdown-menu li a:focus {
+  background: none;
+}
+.edit-panel-component .edit-container .input-component .input-feild .bootstrap-select .dropdown-menu li small {
+  display: none;
+}
+.edit-panel-component .edit-container .unbxd-table .table-body {
+  border: none;
+  height: 600px;
+}
+.edit-panel-component .edit-container .unbxd-table .table-body .table-row {
+  border-bottom: solid 1px #f6f7f9;
+  margin: 20px 0;
+}
+.edit-panel-component .edit-container .unbxd-table .version {
+  width: 10%;
+}
+.edit-panel-component .edit-container .unbxd-table .version .version-val {
+  margin-left: 20px;
+}
+.edit-panel-component .edit-container .unbxd-table .editor {
+  width: 15%;
+}
+.edit-panel-component .edit-container .unbxd-table .updated-on {
+  width: 20%;
+}
+.edit-panel-component .edit-container .unbxd-table .old-value {
+  width: 20%;
+}
+.edit-panel-component .edit-container .unbxd-table .old-value .old-value-val {
+  margin-left: 10px;
+}
+.edit-panel-component .edit-container .unbxd-table .new-value {
+  width: 20%;
+}
+.edit-panel-component .edit-container .unbxd-table .new-value .new-value-val {
+  margin-left: 10px;
+}
+.edit-panel-component .edit-container .unbxd-table .default {
+  width: 10%;
+}
+.edit-panel-component .edit-container .unbxd-table .default .default-val {
+  margin-left: 20px;
+}
+.edit-panel-component .edit-container .unbxd-table .manage {
+  width: 10%;
+}
+.edit-panel-component .edit-container .unbxd-table .read-only {
+  width: 10%;
+}
+.edit-panel-component .edit-container .unbxd-table .hidden-prop {
+  width: 10%;
+}
+.edit-panel-component .edit-container .unbxd-table .name {
+  width: 50%;
+}
+.edit-panel-component .edit-container .unbxd-table .name .name-val {
+  margin-left: 20px;
+}

@@ -1377,6 +1377,7 @@
   width: 50px;
   font-size: 14px;
   margin-right: 10px;
+  text-align: right;
 }
 .edit-property-container .property-edit-header .property-label {
   font-weight: normal;
@@ -1567,6 +1568,7 @@
   width: 50px;
   font-size: 14px;
   margin-right: 10px;
+  text-align: right;
 }
 .edit-group-container .group-edit-header .group-label {
   font-weight: normal;
