@@ -1774,6 +1774,7 @@ body {
   margin: 10px;
   text-align: right;
   padding-right: 20px;
+  text-decoration: none;
 }
 .edit-panel-component .edit-left-nav-section .tab a:hover {
   font-weight: 500;
@@ -1783,6 +1784,7 @@ body {
 .edit-panel-component .edit-left-nav-section .tab a.active {
   font-weight: 500;
   color: #445870;
+  text-decoration: none;
 }
 .edit-panel-component .edit-container {
   padding: 0;

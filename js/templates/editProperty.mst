@@ -14,7 +14,7 @@
 
         <div class="col-md-10">
             <div class="property-edit-header">
-                <a href="javascript:void(0)" onclick="window.history.go(-1); return false;">
+                <a href="javascript:void(0)" onclick="window.location.hash = '#/manage/properties'; return false;">
                     <span class="glyphicon glyphicon-arrow-left edit-back-btn"></span>
                 </a>
                 <span class="property-label">Property</span>
@@ -164,19 +164,19 @@
                         <div class="table-row ">
                             <div class="col1 default">
                                 <div class="default-val">
-                                    <input type="checkbox" value="" checked disabled>
+                                    <input type="checkbox" class= "securityToggle" value="" checked disabled>
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" 
+                                <input class="toggle-trigger" checked type="checkbox" name="manage"
                                         >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox"
+                                <input class="toggle-trigger"  type="checkbox" name="read-only"
                                          >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox"
+                                <input class="toggle-trigger"  type="checkbox" name="hidden"
                                          >
 
                             </div>
@@ -189,19 +189,19 @@
                         <div class="table-row ">
                             <div class="col1 default">
                                 <div class="default-val">
-                                    <input type="checkbox" value="" checked >
+                                    <input type="checkbox" class= "securityToggle" value="" checked >
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" 
+                                <input class="toggle-trigger" checked type="checkbox" name="manage"
                                         >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox"
+                                <input class="toggle-trigger"  type="checkbox" name="read-only"
                                          >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox"
+                                <input class="toggle-trigger"  type="checkbox" name="hidden"
                                          >
 
                             </div>
@@ -214,19 +214,19 @@
                         <div class="table-row ">
                             <div class="col1 default">
                                 <div class="default-val">
-                                    <input type="checkbox" value="" checked >
+                                    <input type="checkbox" class= "securityToggle" value="" checked >
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger"  type="checkbox"
+                                <input class="toggle-trigger"  type="checkbox" name="manage"
                                          >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger" checked type="checkbox" 
+                                <input class="toggle-trigger" checked type="checkbox"  name="read-only"
                                         >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox"
+                                <input class="toggle-trigger"  type="checkbox" name="hidden"
                                          >
 
                             </div>
@@ -239,19 +239,19 @@
                         <div class="table-row ">
                             <div class="col1 default">
                                 <div class="default-val">
-                                    <input type="checkbox" value="" checked >
+                                    <input type="checkbox" class= "securityToggle" value="" checked >
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" 
+                                <input class="toggle-trigger" checked type="checkbox"  name="manage"
                                         >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox"
+                                <input class="toggle-trigger"  type="checkbox" name="read-only"
                                          >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox"
+                                <input class="toggle-trigger"  type="checkbox" name="hidden"
                                          >
 
                             </div>
@@ -264,19 +264,19 @@
                         <div class="table-row ">
                             <div class="col1 default">
                                 <div class="default-val">
-                                    <input type="checkbox" value="" checked >
+                                    <input type="checkbox" class= "securityToggle" value="" checked >
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" 
+                                <input class="toggle-trigger" checked type="checkbox"  name="manage"
                                         >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox"
+                                <input class="toggle-trigger"  type="checkbox" name="read-only"
                                          >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox"
+                                <input class="toggle-trigger"  type="checkbox" name="hidden"
                                          >
 
                             </div>

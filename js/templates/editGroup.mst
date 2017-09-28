@@ -14,11 +14,11 @@
 
         <div class="col-md-10">
             <div class="group-edit-header">
-                <a href="javascript:void(0)" onclick="window.history.go(-1); return false;">
+                <a href="javascript:void(0)" onclick="window.location.hash = '#/manage/groups'; return false;">
                     <span class="glyphicon glyphicon-arrow-left edit-back-btn"></span>
                 </a>
                 <span class="group-label">Group</span>
-                <span class="group-name">{{name}}</span>
+                <span class="group-name">{{groupObj.name}}</span>
             </div>
 
 

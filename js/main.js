@@ -31,8 +31,6 @@ $(document).ready(function () {
             });
 
 
-
-
             this.get('#/addProduct', function (context) {
                 loadAddProductComponent();
             });
@@ -40,7 +38,6 @@ $(document).ready(function () {
             this.get('#/editProduct/:id', function (context) {
                 loadAddProductComponent();
             });
-
 
 
             this.get('#/manage', function (context) {
@@ -54,16 +51,32 @@ $(document).ready(function () {
                 window.location.hash = window.location.hash + "/details";
             });
             this.get('#/manage/properties/:id/details', function (context) {
-                loadEditPropertyComponent({tabInd: 1, id: context.params.id, path : context.path.replace("details", "")});
+                loadEditPropertyComponent({
+                    tabInd: 1,
+                    id: context.params.id,
+                    path: context.path.replace("details", "")
+                });
             });
             this.get('#/manage/properties/:id/translations', function (context) {
-                loadEditPropertyComponent({tabInd: 2, id: context.params.id, path : context.path.replace("translations", "")});
+                loadEditPropertyComponent({
+                    tabInd: 2,
+                    id: context.params.id,
+                    path: context.path.replace("translations", "")
+                });
             });
             this.get('#/manage/properties/:id/security', function (context) {
-                loadEditPropertyComponent({tabInd: 3, id: context.params.id, path : context.path.replace("security", "")});
+                loadEditPropertyComponent({
+                    tabInd: 3,
+                    id: context.params.id,
+                    path: context.path.replace("security", "")
+                });
             });
             this.get('#/manage/properties/:id/history', function (context) {
-                loadEditPropertyComponent({tabInd: 4, id: context.params.id, path : context.path.replace("history", "")});
+                loadEditPropertyComponent({
+                    tabInd: 4,
+                    id: context.params.id,
+                    path: context.path.replace("history", "")
+                });
             });
 
             this.get('#/manage/groups', function (context) {
@@ -73,16 +86,24 @@ $(document).ready(function () {
                 window.location.hash = window.location.hash + "/details";
             });
             this.get('#/manage/groups/:id/details', function (context) {
-                loadEditGroupComponent({tabInd: 1, id: context.params.id, path : context.path.replace("details", "")});
+                loadEditGroupComponent({tabInd: 1, id: context.params.id, path: context.path.replace("details", "")});
             });
             this.get('#/manage/groups/:id/translations', function (context) {
-                loadEditGroupComponent({tabInd: 2, id: context.params.id, path : context.path.replace("translations", "")});
+                loadEditGroupComponent({
+                    tabInd: 2,
+                    id: context.params.id,
+                    path: context.path.replace("translations", "")
+                });
             });
             this.get('#/manage/groups/:id/properties', function (context) {
-                loadEditGroupComponent({tabInd: 3, id: context.params.id, path : context.path.replace("properties", "")});
+                loadEditGroupComponent({
+                    tabInd: 3,
+                    id: context.params.id,
+                    path: context.path.replace("properties", "")
+                });
             });
             this.get('#/manage/groups/:id/history', function (context) {
-                loadEditGroupComponent({tabInd: 4, id: context.params.id, path : context.path.replace("history", "")});
+                loadEditGroupComponent({tabInd: 4, id: context.params.id, path: context.path.replace("history", "")});
             });
         });
         if (session) {
@@ -240,6 +261,7 @@ function loadProductsComponent() {
             productsGridItem: HomeManager.getProducstGridItemTemplate()
         });
     }
+
     function loadTmpl(listData) {
         loadTemplate('js/templates/products.mst', 'appContainer', listData, {}, function () {
             loadProductsList(listData);
@@ -248,12 +270,12 @@ function loadProductsComponent() {
 
                 var clonedListData = JSON.parse(JSON.stringify(listData)); // cheap clone
 
-                if(searchKey) {
+                if (searchKey) {
                     clonedListData.products = clonedListData.products.filter(function (obj) {
                         return (obj.name.toLowerCase().indexOf(searchKey.toLowerCase()) !== -1)
                     });
                 }
-                
+
                 loadProductsList(clonedListData);
             });
         })
@@ -275,17 +297,17 @@ function loadManageComponent(callback) {
 }
 
 function loadPropertiesList(properties) {
-    loadTemplate('js/templates/propertiesList.mst', 'jsPropertiesList', {properties :  properties});
+    loadTemplate('js/templates/propertiesList.mst', 'jsPropertiesList', {properties: properties});
 }
 
 function loadManageProperties() {
-    loadTemplate('js/templates/manageProperties.mst', 'manageSectionContainer',{properties :  HomeManager.getPropertiesList()}, {}, function () {
+    loadTemplate('js/templates/manageProperties.mst', 'manageSectionContainer', {properties: HomeManager.getPropertiesList()}, {}, function () {
         loadPropertiesList(HomeManager.getPropertiesList());
         $(document).on("keyup", ".jsPropertiesSrch", function (event) {
             var searchKey = $(event.target).val();
             var properties = HomeManager.getPropertiesList();
 
-            if(searchKey) {
+            if (searchKey) {
                 properties = properties.filter(function (obj) {
                     return (obj.name.toLowerCase().indexOf(searchKey.toLowerCase()) !== -1)
                 });
@@ -301,18 +323,18 @@ function loadManageProperties() {
 }
 
 function loadGroupsList(groups) {
-    loadTemplate('js/templates/propertyGroupsList.mst', 'jsGroupsList', {groups : groups});
+    loadTemplate('js/templates/propertyGroupsList.mst', 'jsGroupsList', {groups: groups});
 }
 
 function loadManageGroups() {
 
-    loadTemplate('js/templates/manageGroups.mst', 'manageSectionContainer', {groups :  HomeManager.getGroupsList()}, {}, function () {
+    loadTemplate('js/templates/manageGroups.mst', 'manageSectionContainer', {groups: HomeManager.getGroupsList()}, {}, function () {
         loadGroupsList(HomeManager.getGroupsList());
         $(document).on("keyup", ".jsGroupsSearch", function (event) {
             var searchKey = $(event.target).val();
             var groups = HomeManager.getGroupsList();
 
-            if(searchKey) {
+            if (searchKey) {
                 groups = groups.filter(function (obj) {
                     return (obj.name.toLowerCase().indexOf(searchKey.toLowerCase()) !== -1)
                 });
@@ -331,7 +353,7 @@ function loadManageGroups() {
         window.location.hash = '#/manage/groups/' + this.id
     });
     $(document).on("click", ".group-props", function (el) {
-        window.location.hash = '#/manage/properties/' + this.id.split(" ").join("-")+"/details";
+        window.location.hash = '#/manage/properties/' + this.id.split(" ").join("-") + "/details";
     });
 
 }
@@ -344,9 +366,9 @@ function loadAddProductComponent() {
 function loadEditPropertyComponent(meta) {
     let metaData = meta;
     let obj = {
-        name : meta.id.split("-").join(" "),
+        name: meta.id.split("-").join(" "),
         urlParam: meta.id,
-        path : meta.path
+        path: meta.path
     }
     loadTemplate('js/templates/editProperty.mst', 'appContainer', obj, {});
     setTabHighlight(3, ".header-container .navbar-menu");
@@ -359,6 +381,28 @@ function loadEditPropertyComponent(meta) {
         $('select.selectpicker').selectpicker({
             caretIcon: 'glyphicon glyphicon-menu-down'
         });
+
+        $('.toggle-trigger').change(function (event) {
+            let that = this;
+            if (this.checked) {
+                let radioBtns = $($(this).closest(".table-row")).find(".toggle-trigger")
+                radioBtns.each(function (index) {
+                    if (this.name !== that.name) {
+                        $(this).bootstrapToggle('off');
+                    }
+                });
+               let checkBox =  $($(this).closest(".table-row")).find(".securityToggle")[0];
+                checkBox.checked = true;
+            }
+        });
+        $('#Security :checkbox').click(function (event) {
+            if (!this.checked) {
+                let radioBtns = $($(this).closest(".table-row")).find(".toggle-trigger")
+                radioBtns.each(function (index) {
+                    $(this).bootstrapToggle('off');
+                });
+            }
+        })
     }, 500)
 
 
@@ -369,8 +413,8 @@ function loadEditGroupComponent(meta) {
     let id = meta.id
     let obj = {
         urlParam: meta.id,
-        path : meta.path,
-        groupObj : HomeManager.getGroupById(id)
+        path: meta.path,
+        groupObj: HomeManager.getGroupById(id)
     }
     loadTemplate('js/templates/editGroup.mst', 'appContainer', obj, {});
     setTabHighlight(3, ".header-container .navbar-menu");
