@@ -391,8 +391,13 @@ function loadEditPropertyComponent(meta) {
                         $(this).bootstrapToggle('off');
                     }
                 });
-               let checkBox =  $($(this).closest(".table-row")).find(".securityToggle")[0];
+                let checkBox = $($(this).closest(".table-row")).find(".securityToggle")[0];
                 checkBox.checked = true;
+            } else {
+                if ($(this).closest(".table-row").find("input.toggle-trigger").not(':checked').length === 3) {
+                    let checkBox = $($(this).closest(".table-row")).find(".securityToggle")[0];
+                    checkBox.checked = false;
+                }
             }
         });
         $('#Security :checkbox').click(function (event) {
@@ -401,6 +406,11 @@ function loadEditPropertyComponent(meta) {
                 radioBtns.each(function (index) {
                     $(this).bootstrapToggle('off');
                 });
+            } else {
+                if ($(this).closest(".table-row").find("input.toggle-trigger").not(':checked').length === 3) {
+                    let radioBtns = $($(this).closest(".table-row")).find(".toggle-trigger")
+                    $(radioBtns[0]).bootstrapToggle('on');
+                }
             }
         })
     }, 500)

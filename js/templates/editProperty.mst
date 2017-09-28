@@ -168,15 +168,15 @@
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" name="manage"
+                                <input class="toggle-trigger" checked type="checkbox" name="manage" disabled
                                         >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox" name="read-only"
+                                <input class="toggle-trigger"  type="checkbox" name="read-only" disabled
                                          >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox" name="hidden"
+                                <input class="toggle-trigger"  type="checkbox" name="hidden" disabled
                                          >
 
                             </div>
