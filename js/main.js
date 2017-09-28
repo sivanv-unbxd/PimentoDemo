@@ -272,6 +272,8 @@ function loadManageGroups() {
 
     $(document).on("click", ".toggleGroupProps", function (el) {
         $(this).parent().toggleClass('open').toggleClass('closed');
+        el.stopImmediatePropagation();
+        el.preventDefault();
     });
     $(document).on("click", ".groupRowActionHandler", function (el) {
         window.location.hash = '#/manage/groups/' + this.id
