@@ -14,7 +14,7 @@
 
         <div class="col-md-10">
             <div class="property-edit-header">
-                <a href="javascript:void(0)" onclick="window.location.hash = '#/manage/properties'; return false;">
+                <a href="javascript:void(0)" onclick="window.history.go(-1); return false;">
                     <span class="glyphicon glyphicon-arrow-left edit-back-btn"></span>
                 </a>
                 <span class="property-label">Property</span>

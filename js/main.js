@@ -261,7 +261,7 @@ function loadManageProperties() {
     setTabHighlight(0, ".manage-container .navbar-menu");
 
     $(document).on("click", ".editProperty", function (el) {
-        window.location.hash = '#/manage/properties/' + this.id.split(" ").join("-");
+        window.location.hash = '#/manage/properties/' + this.id.split(" ").join("-") + "/details";
     });
 }
 
@@ -277,6 +277,9 @@ function loadManageGroups() {
     });
     $(document).on("click", ".editGroup", function (el) {
         window.location.hash = '#/manage/groups/' + this.id
+    });
+    $(document).on("click", ".group-props", function (el) {
+        window.location.hash = '#/manage/properties/' + this.id.split(" ").join("-")+"/details";
     });
 
 }

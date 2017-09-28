@@ -39,7 +39,7 @@
                                 </div>
                                 <ul class="group-props-list">
                                     {{#propertiesList}}
-                                    <li class="group-props">{{name}} <span class="group-prop-type">({{type}})</span></li>
+                                    <li class="group-props" id="{{id}}">{{name}} <span class="group-prop-type">({{type}})</span></li>
                                     {{/propertiesList}}
                                 </ul>
 
