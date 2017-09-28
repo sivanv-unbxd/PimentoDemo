@@ -4,16 +4,17 @@
 
   .unbxd-table {
     .table-header {
-      .col1, .col2, .col3 {
+      .col1, .col2, .col3,.col4 {
         height: 36px;
       }
     }
-    .col1, .col2, .col3 {
+    .col1, .col2, .col3, .col4 {
       margin-top: 20px;
       height: 40px;
       font-size: 16px;
       text-align: left;
       color: #445870;
+      display: inline-block;
     }
 
     .property-col {
@@ -26,8 +27,21 @@
       width: 25%;
     }
     .table-row {
-      height: 60px;
+      height: 75px;
       border-bottom: solid 1px #f6f7f9;
+      &.propertyRowActionHandler {
+        .editProperty {
+          border: solid 1px #e0e7ee;
+          padding: 10px;
+          cursor: pointer;
+          visibility: hidden;
+        }
+        &:hover {
+          .editProperty {
+            visibility: visible;
+          }
+        }
+      }
       &:hover {
         background-color: #f6f7f9;
       }

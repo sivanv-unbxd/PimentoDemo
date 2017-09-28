@@ -31,8 +31,8 @@
                     {{#groups}}
                     <div class="table-row groupRowActionHandler" id="{{id}}" comments = "{{comments}}">
                         <div class="col1 group-col">
-                            <div class="group-details">
-                                <div class="group-name-summary closed">
+                            <div class="group-details closed">
+                                <div class="group-name-summary">
                                     <span class="glyphicon glyphicon-triangle-right toggleGroupProps" ></span>
                                     <span class="glyphicon glyphicon-triangle-bottom toggleGroupProps" ></span>
                                     <span class="group-name">{{name}} ({{propertiesLength}})</span>
@@ -47,6 +47,9 @@
                         </div>
                         <div class="col2 comments-col">
                             <div class="group-comments"> {{comments}}</div>
+                        </div>
+                        <div class="col3 actions-col">
+                            <span class=" glyphicon glyphicon-pencil editGroup" id="{{id}}"></span>
                         </div>
                     </div>
                     {{/groups}}

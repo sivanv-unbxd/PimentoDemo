@@ -1,0 +1,32 @@
+.edit-group-container .group-edit-header .edit-back-btn {
+  color: #b0bbca;
+  width: 50px;
+  font-size: 14px;
+  margin-right: 10px;
+  text-align: right;
+}
+.edit-group-container .group-edit-header .group-label {
+  font-weight: normal;
+  color: #b0bbca;
+  font-size: 18px;
+  text-align: left;
+  margin-right: 10px;
+}
+.edit-group-container .group-edit-header .group-name {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  color: #445870;
+}
+.edit-group-container .tag-properties {
+  height: 17px;
+  font-size: 14px;
+  text-align: left;
+  color: #61adc8;
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+}
+.edit-group-container .tag-properties:hover {
+  cursor: pointer;
+}

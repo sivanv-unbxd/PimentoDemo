@@ -40,6 +40,9 @@
                             <div class="col3 group-col">
                                 <div class="property-group"> {{group}}</div>
                             </div>
+                            <div class="col4 actions-col">
+                                <span class=" glyphicon glyphicon-pencil editProperty" id="{{id}}"></span>
+                            </div>
                         </div>
                     {{/properties}}
                 </div>

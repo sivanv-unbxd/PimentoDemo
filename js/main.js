@@ -260,7 +260,7 @@ function loadManageProperties() {
     loadTemplate('js/templates/manageProperties.mst', 'manageSectionContainer',{properties :  HomeManager.getPropertiesList()});
     setTabHighlight(0, ".manage-container .navbar-menu");
 
-    $(document).on("click", ".propertyRowActionHandler", function (el) {
+    $(document).on("click", ".editProperty", function (el) {
         window.location.hash = '#/manage/properties/' + this.id.split(" ").join("-");
     });
 }
@@ -271,11 +271,11 @@ function loadManageGroups() {
     setTabHighlight(1, ".manage-container .navbar-menu");
 
     $(document).on("click", ".toggleGroupProps", function (el) {
-        $(this).parent().toggleClass('open').toggleClass('closed');
+        $(this).closest(".group-details").toggleClass('open').toggleClass('closed');
         el.stopImmediatePropagation();
         el.preventDefault();
     });
-    $(document).on("click", ".groupRowActionHandler", function (el) {
+    $(document).on("click", ".editGroup", function (el) {
         window.location.hash = '#/manage/groups/' + this.id
     });
 
