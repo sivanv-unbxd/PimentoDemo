@@ -232,12 +232,30 @@ function loadProductsComponent() {
         }
     });
 
-    function loadTmpl(listData) {
-        loadTemplate('js/templates/products.mst', 'appContainer', listData, {
+    function loadProductsList(listData) {
+        loadTemplate('js/templates/productsList.mst', 'productsListingContainer', listData, {
             productListView: HomeManager.getProductsListingTemplate(),
             productListRow: HomeManager.getProductsListingRowTemplate(),
             productGridView: HomeManager.getProducstGridTemplate(),
             productsGridItem: HomeManager.getProducstGridItemTemplate()
+        });
+    }
+    function loadTmpl(listData) {
+        loadTemplate('js/templates/products.mst', 'appContainer', listData, {}, function () {
+            loadProductsList(listData);
+            $(document).on("keyup", ".jsProductsSrch", function (event) {
+                var searchKey = $(event.target).val();
+
+                var clonedListData = JSON.parse(JSON.stringify(listData)); // cheap clone
+
+                if(searchKey) {
+                    clonedListData.products = clonedListData.products.filter(function (obj) {
+                        return (obj.name.toLowerCase().indexOf(searchKey.toLowerCase()) !== -1)
+                    });
+                }
+                
+                loadProductsList(clonedListData);
+            });
         })
     }
 }
@@ -256,8 +274,25 @@ function loadManageComponent(callback) {
 
 }
 
+function loadPropertiesList(properties) {
+    loadTemplate('js/templates/propertiesList.mst', 'jsPropertiesList', {properties :  properties});
+}
+
 function loadManageProperties() {
-    loadTemplate('js/templates/manageProperties.mst', 'manageSectionContainer',{properties :  HomeManager.getPropertiesList()});
+    loadTemplate('js/templates/manageProperties.mst', 'manageSectionContainer',{properties :  HomeManager.getPropertiesList()}, {}, function () {
+        loadPropertiesList(HomeManager.getPropertiesList());
+        $(document).on("keyup", ".jsPropertiesSrch", function (event) {
+            var searchKey = $(event.target).val();
+            var properties = HomeManager.getPropertiesList();
+
+            if(searchKey) {
+                properties = properties.filter(function (obj) {
+                    return (obj.name.toLowerCase().indexOf(searchKey.toLowerCase()) !== -1)
+                });
+            }
+            loadPropertiesList(properties)
+        })
+    });
     setTabHighlight(0, ".manage-container .navbar-menu");
 
     $(document).on("click", ".editProperty", function (el) {
@@ -265,9 +300,26 @@ function loadManageProperties() {
     });
 }
 
+function loadGroupsList(groups) {
+    loadTemplate('js/templates/propertyGroupsList.mst', 'jsGroupsList', {groups : groups});
+}
+
 function loadManageGroups() {
 
-    loadTemplate('js/templates/manageGroups.mst', 'manageSectionContainer', {groups :  HomeManager.getGroupsList()})
+    loadTemplate('js/templates/manageGroups.mst', 'manageSectionContainer', {groups :  HomeManager.getGroupsList()}, {}, function () {
+        loadGroupsList(HomeManager.getGroupsList());
+        $(document).on("keyup", ".jsGroupsSearch", function (event) {
+            var searchKey = $(event.target).val();
+            var groups = HomeManager.getGroupsList();
+
+            if(searchKey) {
+                groups = groups.filter(function (obj) {
+                    return (obj.name.toLowerCase().indexOf(searchKey.toLowerCase()) !== -1)
+                });
+            }
+            loadGroupsList(groups);
+        })
+    })
     setTabHighlight(1, ".manage-container .navbar-menu");
 
     $(document).on("click", ".toggleGroupProps", function (el) {
