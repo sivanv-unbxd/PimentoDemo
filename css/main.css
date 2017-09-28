@@ -1358,6 +1358,7 @@
   text-align: left;
   color: #445870;
   margin: 15px 0 0 0;
+  cursor: pointer;
 }
 .manage-groups-container .unbxd-table .table-row .group-col .group-details .group-props-list .group-props .group-prop-type {
   color: #8ca0b3;
@@ -1625,7 +1626,6 @@
 }
 body {
   font-family: "Avenir Next", sans-serif;
-  overflow: hidden;
 }
 #appContainer {
   height: 705px;
