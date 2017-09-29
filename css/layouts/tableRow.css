@@ -82,10 +82,13 @@
   width: 122px;
   height: 122px;
   border-radius: 3px;
-  background-color: #ffffff;
   border: solid 1px #e0e7ee;
   text-align: left;
   vertical-align: top;
+  background-color: #f6f7f9;
+  position: relative;
+  background-size: cover;
+  display: block;
 }
 .listing-table .table-row .product-thumbnail .thumbnail-img {
   width: 120px;
@@ -153,6 +156,17 @@
   border-radius: 6px;
   object-fit: contain;
   background-color: #f17d9d;
+  vertical-align: middle;
+  position: relative;
+  top: 5px;
+}
+.listing-table .table-row .product-status .orange {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  object-fit: contain;
+  background-color: rgba(228, 187, 55, 0.77);
   vertical-align: middle;
   position: relative;
   top: 5px;

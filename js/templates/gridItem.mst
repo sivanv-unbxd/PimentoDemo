@@ -5,7 +5,7 @@
     </div>
     <div class="product-mask">
         <span class="glyphicon glyphicon-pencil editItem"></span>
-        <span class="glyphicon glyphicon-option-horizontal selectItem"></span>
+        <!--<span class="glyphicon glyphicon-option-horizontal selectItem"></span>-->
     </div>
     <div class="product-details">
         <div class="product-name">{{name}}</div>

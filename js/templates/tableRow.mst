@@ -3,8 +3,8 @@
         <input type="checkbox" class="grid-check-box"></input>
     </div>
     <div class="col2">
-        <div class="product-thumbnail">
-            <img src="{{imageUrl}}" class="thumbnail-img"/>
+        <div class="product-thumbnail" style="background-image: url({{imageUrl}} )">
+            <!--<img src="{{imageUrl}}" class="thumbnail-img"/>-->
         </div>
     </div>
     <div class="col3">
