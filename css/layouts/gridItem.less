@@ -143,6 +143,17 @@
         position: relative;
         top: 5px;
       }
+      .orange {
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 6px;
+        object-fit: contain;
+        background-color: rgba(228,187,55,0.77);
+        vertical-align: middle;
+        position: relative;
+        top: 5px;
+      }
     }
     .product-sku {
       font-size: 14px;
@@ -221,10 +232,9 @@
   .product-image {
     width: 278px;
     height: 210px;
-    .thumbnail-img {
-      width: 278px;
-      height: 210px;
-    }
+    background-size: cover;
+    /* Or use the background shorthand */
+
   }
   .product-mask {
     width: 278px;

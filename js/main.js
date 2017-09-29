@@ -460,4 +460,28 @@ function getPathLastParam(path) {
     return pathList[pathList.length -1]
 }
 
+function getJSON(x){
+    let childs = x.children;
+    let len=childs.length;
+    let list = [];
+    let obj = {}
+
+    for(var i=0; i<len; i++){
+        let data = childs[i];
+        obj.id = Math.floor(Math.random()*90000000) + 10000000;
+        obj.skuId = data.dataset.asin;
+        obj.imageUrl = data.querySelector(".s-access-image").src;
+        obj.name = data.querySelector(".s-access-title").innerText;
+        obj.price = data.querySelector(".s-price").innerText;
+        obj.category = "Denims";
+        obj.addedOn = "Denims";
+        obj.currency = "$";
+        obj.status = ["green", "red", "orange"][Math.floor(Math.random() * 3)];
+
+        list.push(obj);
+    }
+
+    return list.toString();
+}
+
 

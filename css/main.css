@@ -355,15 +355,6 @@
 }
 .products-container {
   margin-top: 35px;
-  -webkit-user-select: none;
-  /* Chrome/Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+ */
-  /* Rules below not implemented in browsers yet */
-  -o-user-select: none;
-  user-select: none;
 }
 .products-container .products-breadcrumb {
   height: 22px;
@@ -1009,6 +1000,17 @@
   position: relative;
   top: 5px;
 }
+.grid-item .product-details .product-status .orange {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  object-fit: contain;
+  background-color: rgba(228, 187, 55, 0.77);
+  vertical-align: middle;
+  position: relative;
+  top: 5px;
+}
 .grid-item .product-details .product-sku {
   font-size: 14px;
   text-align: left;
@@ -1073,10 +1075,8 @@
 .cozy .grid-item .product-image {
   width: 278px;
   height: 210px;
-}
-.cozy .grid-item .product-image .thumbnail-img {
-  width: 278px;
-  height: 210px;
+  background-size: cover;
+  /* Or use the background shorthand */
 }
 .cozy .grid-item .product-mask {
   width: 278px;

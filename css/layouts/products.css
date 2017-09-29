@@ -1,14 +1,5 @@
 .products-container {
   margin-top: 35px;
-  -webkit-user-select: none;
-  /* Chrome/Safari */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* IE10+ */
-  /* Rules below not implemented in browsers yet */
-  -o-user-select: none;
-  user-select: none;
 }
 .products-container .products-breadcrumb {
   height: 22px;

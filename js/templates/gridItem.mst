@@ -1,7 +1,7 @@
 <div class="grid-item gridActionsHandler" id="{{id}}">
 
-    <div class="product-image">
-        <img src="{{imageUrl}}" class="thumbnail-img"/>
+    <div class="product-image" style="background-image: url({{imageUrl}} )">
+        <!--<img src="{{imageUrl}}" class="thumbnail-img"/>-->
     </div>
     <div class="product-mask">
         <span class="glyphicon glyphicon-pencil editItem"></span>
