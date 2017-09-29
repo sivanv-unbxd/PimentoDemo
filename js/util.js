@@ -25,6 +25,6 @@ function openTab(tabName) {
     }
     // document.getElementById(tabName).style.display = "block";
     // evt.target.className += " active";
-    $(".edit-left-nav-section .tablinks."+tabName).className  += " active";
+    $(".edit-left-nav-section .tablinks."+tabName)[0].className  += " active";
     $(".edit-container .tabcontent."+tabName).show();
 }
