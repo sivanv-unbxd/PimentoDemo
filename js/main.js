@@ -364,84 +364,79 @@ function loadAddProductComponent() {
 }
 
 function loadEditPropertyComponent(meta) {
-    let metaData = meta;
     let obj = {
         name: meta.id.split("-").join(" "),
         urlParam: meta.id,
         path: meta.path
     }
-    loadTemplate('js/templates/editProperty.mst', 'appContainer', obj, {});
+    loadTemplate('js/templates/editProperty.mst', 'appContainer', obj, {}, editPropertyCallback.bind(meta));
     setTabHighlight(3, ".header-container .navbar-menu");
-    setTimeout(function () {
-        // $(".edit-left-nav-section .tablinks:nth-child(" + metaData.tabInd + ")").click();
-        openTab(metaData.tabInd);
-        $('.toggle-trigger').bootstrapToggle({
-            on: 'Yes',
-            off: 'No'
-        });
-        $('select.selectpicker').selectpicker({
-            caretIcon: 'glyphicon glyphicon-menu-down'
-        });
-
-        $('.toggle-trigger').change(function (event) {
-            let that = this;
-            if (this.checked) {
-                let radioBtns = $($(this).closest(".table-row")).find(".toggle-trigger")
-                radioBtns.each(function (index) {
-                    if (this.name !== that.name) {
-                        $(this).bootstrapToggle('off');
-                    }
-                });
-                let checkBox = $($(this).closest(".table-row")).find(".securityToggle")[0];
-                checkBox.checked = true;
-            } else {
-                if ($(this).closest(".table-row").find("input.toggle-trigger").not(':checked').length === 3) {
-                    let checkBox = $($(this).closest(".table-row")).find(".securityToggle")[0];
-                    checkBox.checked = false;
-                }
-            }
-        });
-        $('#Security :checkbox').click(function (event) {
-            if (!this.checked) {
-                let radioBtns = $($(this).closest(".table-row")).find(".toggle-trigger")
-                radioBtns.each(function (index) {
-                    $(this).bootstrapToggle('off');
-                });
-            } else {
-                if ($(this).closest(".table-row").find("input.toggle-trigger").not(':checked').length === 3) {
-                    let radioBtns = $($(this).closest(".table-row")).find(".toggle-trigger")
-                    $(radioBtns[0]).bootstrapToggle('on');
-                }
-            }
-        })
-    }, 400)
-
 
 }
 
+function editPropertyCallback() {
+    openTab(this.tabInd);
+    $('.toggle-trigger').bootstrapToggle({
+        on: 'Yes',
+        off: 'No'
+    });
+    $('select.selectpicker').selectpicker({
+        caretIcon: 'glyphicon glyphicon-menu-down'
+    });
+
+    $('.toggle-trigger').change(function (event) {
+        let that = this;
+        if (this.checked) {
+            let radioBtns = $($(this).closest(".table-row")).find(".toggle-trigger")
+            radioBtns.each(function (index) {
+                if (this.name !== that.name) {
+                    $(this).bootstrapToggle('off');
+                }
+            });
+            let checkBox = $($(this).closest(".table-row")).find(".securityToggle")[0];
+            checkBox.checked = true;
+        } else {
+            if ($(this).closest(".table-row").find("input.toggle-trigger").not(':checked').length === 3) {
+                let checkBox = $($(this).closest(".table-row")).find(".securityToggle")[0];
+                checkBox.checked = false;
+            }
+        }
+    });
+    $('#Security :checkbox').click(function (event) {
+        if (!this.checked) {
+            let radioBtns = $($(this).closest(".table-row")).find(".toggle-trigger")
+            radioBtns.each(function (index) {
+                $(this).bootstrapToggle('off');
+            });
+        } else {
+            if ($(this).closest(".table-row").find("input.toggle-trigger").not(':checked').length === 3) {
+                let radioBtns = $($(this).closest(".table-row")).find(".toggle-trigger")
+                $(radioBtns[0]).bootstrapToggle('on');
+            }
+        }
+    })
+}
+
 function loadEditGroupComponent(meta) {
-    let metaData = meta;
     let id = meta.id
     let obj = {
         urlParam: meta.id,
         path: meta.path,
         groupObj: HomeManager.getGroupById(id)
     }
-    loadTemplate('js/templates/editGroup.mst', 'appContainer', obj, {});
+    loadTemplate('js/templates/editGroup.mst', 'appContainer', obj, {}, editGroupCallback.bind(meta));
     setTabHighlight(3, ".header-container .navbar-menu");
-    setTimeout(function () {
-        // $(".edit-left-nav-section .tablinks:nth-child(" + metaData.tabInd + ")").click();
-        openTab(metaData.tabInd)
-        $('.toggle-trigger').bootstrapToggle({
-            on: 'Yes',
-            off: 'No'
-        });
-        $('select.selectpicker').selectpicker({
-            caretIcon: 'glyphicon glyphicon-menu-down'
-        });
-    }, 400)
+}
 
-
+function editGroupCallback() {
+    openTab(this.tabInd)
+    $('.toggle-trigger').bootstrapToggle({
+        on: 'Yes',
+        off: 'No'
+    });
+    $('select.selectpicker').selectpicker({
+        caretIcon: 'glyphicon glyphicon-menu-down'
+    });
 }
 
 function loadEditPropertyGroupComponent() {
