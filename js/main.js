@@ -36,7 +36,7 @@ $(document).ready(function () {
             });
 
             this.get('#/editProduct/:id', function (context) {
-                loadAddProductComponent();
+                loadEditProductComponent();
             });
 
 
@@ -166,6 +166,7 @@ function loadHeader() {
     });
     $(document).on("click", "#logoutPimento", function () {
         HomeManager.logoutUser();
+        window.location.reload(true);
         loadLoginScreen();
     });
 
@@ -368,6 +369,11 @@ function loadManageGroups() {
 
 function loadAddProductComponent() {
     loadTemplate('js/templates/addProduct.mst', 'appContainer')
+    setTabHighlight(1, ".header-container .navbar-menu");
+}
+
+function loadEditProductComponent() {
+    loadTemplate('js/templates/editProduct.mst', 'appContainer')
     setTabHighlight(1, ".header-container .navbar-menu");
 }
 
