@@ -75,14 +75,14 @@
                 <div class="input-component">
                     <div class="input-label">Allow negative values</div>
                     <div class="input-feild">
-                        <input class="toggle-trigger" checked type="checkbox" 
+                        <input class="toggle-trigger" data-size="mini" checked type="checkbox" 
                                 >
                     </div>
                 </div>
                 <div class="input-component">
                     <div class="input-label">Allow negative values</div>
                     <div class="input-feild">
-                        <input class="toggle-trigger" checked type="checkbox" 
+                        <input class="toggle-trigger" data-size="mini" checked type="checkbox" 
                                 >
                     </div>
                 </div>
@@ -144,7 +144,7 @@
 
             </div>
             {{/isEditor}}
-            <div  class="tabcontent security">
+            <div  id="security" class="tabcontent security">
                 <div class="title">
                     Security
                 </div>
@@ -172,15 +172,15 @@
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" name="manage" disabled
+                                <input class="toggle-trigger" data-size="mini" checked type="checkbox" name="manage" disabled
                                         >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox" name="read-only" disabled
+                                <input class="toggle-trigger" data-size="mini"  type="checkbox" name="read-only" disabled
                                          >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox" name="hidden" disabled
+                                <input class="toggle-trigger" data-size="mini"  type="checkbox" name="hidden" disabled
                                          >
 
                             </div>
@@ -197,15 +197,15 @@
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox" name="manage"
+                                <input class="toggle-trigger" data-size="mini" checked type="checkbox" name="manage"
                                         >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox" name="read-only"
+                                <input class="toggle-trigger" data-size="mini"  type="checkbox" name="read-only"
                                          >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox" name="hidden"
+                                <input class="toggle-trigger" data-size="mini"  type="checkbox" name="hidden"
                                          >
 
                             </div>
@@ -222,15 +222,15 @@
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger"  type="checkbox" name="manage"
+                                <input class="toggle-trigger" data-size="mini"  type="checkbox" name="manage"
                                          >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger" checked type="checkbox"  name="read-only"
+                                <input class="toggle-trigger" data-size="mini" checked type="checkbox"  name="read-only"
                                         >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox" name="hidden"
+                                <input class="toggle-trigger" data-size="mini"  type="checkbox" name="hidden"
                                          >
 
                             </div>
@@ -247,15 +247,15 @@
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox"  name="manage"
+                                <input class="toggle-trigger" data-size="mini" checked type="checkbox"  name="manage"
                                         >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox" name="read-only"
+                                <input class="toggle-trigger" data-size="mini"  type="checkbox" name="read-only"
                                          >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox" name="hidden"
+                                <input class="toggle-trigger" data-size="mini"  type="checkbox" name="hidden"
                                          >
 
                             </div>
@@ -272,15 +272,15 @@
                                 </div>
                             </div>
                             <div class="col2 manage">
-                                <input class="toggle-trigger" checked type="checkbox"  name="manage"
+                                <input class="toggle-trigger" data-size="mini" checked type="checkbox"  name="manage"
                                         >
                             </div>
                             <div class="col3 read-only">
-                                <input class="toggle-trigger"  type="checkbox" name="read-only"
+                                <input class="toggle-trigger" data-size="mini"  type="checkbox" name="read-only"
                                          >
                             </div>
                             <div class="col3 hidden-prop">
-                                <input class="toggle-trigger"  type="checkbox" name="hidden"
+                                <input class="toggle-trigger" data-size="mini"  type="checkbox" name="hidden"
                                          >
 
                             </div>

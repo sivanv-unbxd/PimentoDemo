@@ -422,7 +422,7 @@ function editPropertyCallback() {
             }
         }
     });
-    $('#Security :checkbox').click(function (event) {
+    $('#security :checkbox').click(function (event) {
         if (!this.checked) {
             let radioBtns = $($(this).closest(".table-row")).find(".toggle-trigger")
             radioBtns.each(function (index) {
