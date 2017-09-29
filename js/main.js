@@ -52,30 +52,30 @@ $(document).ready(function () {
             });
             this.get('#/manage/properties/:id/details', function (context) {
                 loadEditPropertyComponent({
-                    tabInd: 1,
                     id: context.params.id,
-                    path: context.path.replace("details", "")
+                    path: context.path.replace("details", ""),
+                    fullPath: context.path
                 });
             });
             this.get('#/manage/properties/:id/translations', function (context) {
                 loadEditPropertyComponent({
-                    tabInd: 2,
                     id: context.params.id,
-                    path: context.path.replace("translations", "")
+                    path: context.path.replace("translations", ""),
+                    fullPath: context.path
                 });
             });
             this.get('#/manage/properties/:id/security', function (context) {
                 loadEditPropertyComponent({
-                    tabInd: 3,
                     id: context.params.id,
-                    path: context.path.replace("security", "")
+                    path: context.path.replace("security", ""),
+                    fullPath: context.path
                 });
             });
             this.get('#/manage/properties/:id/history', function (context) {
                 loadEditPropertyComponent({
-                    tabInd: 4,
                     id: context.params.id,
-                    path: context.path.replace("history", "")
+                    path: context.path.replace("history", ""),
+                    fullPath: context.path
                 });
             });
 
@@ -86,24 +86,32 @@ $(document).ready(function () {
                 window.location.hash = window.location.hash + "/details";
             });
             this.get('#/manage/groups/:id/details', function (context) {
-                loadEditGroupComponent({tabInd: 1, id: context.params.id, path: context.path.replace("details", "")});
+                loadEditGroupComponent({
+                    id: context.params.id,
+                    path: context.path.replace("details", ""),
+                    fullPath: context.path
+                });
             });
             this.get('#/manage/groups/:id/translations', function (context) {
                 loadEditGroupComponent({
-                    tabInd: 2,
                     id: context.params.id,
-                    path: context.path.replace("translations", "")
+                    path: context.path.replace("translations", ""),
+                    fullPath: context.path
                 });
             });
             this.get('#/manage/groups/:id/properties', function (context) {
                 loadEditGroupComponent({
-                    tabInd: 3,
                     id: context.params.id,
-                    path: context.path.replace("properties", "")
+                    path: context.path.replace("properties", ""),
+                    fullPath: context.path
                 });
             });
             this.get('#/manage/groups/:id/history', function (context) {
-                loadEditGroupComponent({tabInd: 4, id: context.params.id, path: context.path.replace("history", "")});
+                loadEditGroupComponent({
+                    id: context.params.id,
+                    path: context.path.replace("history", ""),
+                    fullPath: context.path
+                });
             });
         });
         if (session) {
@@ -369,13 +377,17 @@ function loadEditPropertyComponent(meta) {
         urlParam: meta.id,
         path: meta.path
     }
+    meta.tabName = getPathLastParam(meta.fullPath);
+    let userRoles =HomeManager.getUserState().roles;
+    let isEditor = userRoles.indexOf("EDITOR");
+    obj.isEditor = (isEditor >= 0) ? true: false;
     loadTemplate('js/templates/editProperty.mst', 'appContainer', obj, {}, editPropertyCallback.bind(meta));
     setTabHighlight(3, ".header-container .navbar-menu");
 
 }
 
 function editPropertyCallback() {
-    openTab(this.tabInd);
+    openTab(this.tabName);
     $('.toggle-trigger').bootstrapToggle({
         on: 'Yes',
         off: 'No'
@@ -424,12 +436,16 @@ function loadEditGroupComponent(meta) {
         path: meta.path,
         groupObj: HomeManager.getGroupById(id)
     }
+    meta.tabName = getPathLastParam(meta.fullPath);
+    let userRoles =HomeManager.getUserState().roles;
+    let isEditor = userRoles.indexOf("EDITOR");
+    obj.isEditor = (isEditor >= 0) ? true: false;
     loadTemplate('js/templates/editGroup.mst', 'appContainer', obj, {}, editGroupCallback.bind(meta));
     setTabHighlight(3, ".header-container .navbar-menu");
 }
 
 function editGroupCallback() {
-    openTab(this.tabInd)
+    openTab(this.tabName)
     $('.toggle-trigger').bootstrapToggle({
         on: 'Yes',
         off: 'No'
@@ -439,10 +455,9 @@ function editGroupCallback() {
     });
 }
 
-function loadEditPropertyGroupComponent() {
-    loadTemplate('js/templates/editProperty.mst', 'appContainer', {}, {});
-    setTabHighlight(3, ".header-container .navbar-menu");
+function getPathLastParam(path) {
+    let pathList = path.split("/")
+    return pathList[pathList.length -1]
 }
-
 
 

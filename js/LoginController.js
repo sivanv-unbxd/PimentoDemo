@@ -36,7 +36,7 @@ let LoginManager = function () {
             userName: "pp@unbxd.com",
             headerName: "pp@unbxd.com",
             password: "zaq12wsx",
-            roles: ["ADMIN"]
+            roles: ["EDITOR"]
         },
         {
             userName: "pimento@unbxd.com",

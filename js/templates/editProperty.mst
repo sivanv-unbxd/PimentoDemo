@@ -36,16 +36,19 @@
         <div class="col-md-2">
             <div class="edit-left-nav-section">
                 <div class="tab">
-                    <a href="{{path}}details" class="tablinks"  >Details</a>
-                    <a href="{{path}}translations" class="tablinks" >Translations</a>
-                    <a href="{{path}}security" class="tablinks" >Security</a>
-                    <a href="{{path}}history" class="tablinks" >History</a>
+                    <a href="{{path}}details" class="tablinks details"  >Details</a>
+                    {{#isEditor}}
+                    <a href="{{path}}translations" class="tablinks translations" >Translations</a>
+                    {{/isEditor}}
+
+                    <a href="{{path}}security" class="tablinks security" >Security</a>
+                    <a href="{{path}}history" class="tablinks history" >History</a>
                 </div>
             </div>
         </div>
 
         <div class="col-md-10 edit-container">
-            <div id="Details" class="tabcontent">
+            <div  class="tabcontent details">
                 <div class="title">
                     Details
                 </div>
@@ -114,7 +117,8 @@
 
 
             </div>
-            <div id="Translations" class="tabcontent">
+            {{#isEditor}}
+            <div  class="tabcontent translations">
                 <div class="title">
                     Translation
                 </div>
@@ -139,8 +143,8 @@
 
 
             </div>
-
-            <div id="Security" class="tabcontent">
+            {{/isEditor}}
+            <div  class="tabcontent security">
                 <div class="title">
                     Security
                 </div>
@@ -290,7 +294,7 @@
                     </div>
                 </div>
             </div>
-            <div id="History" class="tabcontent">
+            <div class="tabcontent history">
                 <div class="title">
                     History
                 </div>
