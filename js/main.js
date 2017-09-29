@@ -116,6 +116,8 @@ $(document).ready(function () {
         });
         if (session) {
             app.run('#/overview');
+        }else{
+            app.run();
         }
     })
 
@@ -167,7 +169,7 @@ function loadHeader() {
     $(document).on("click", "#logoutPimento", function () {
         HomeManager.logoutUser();
         window.location.reload(true);
-        loadLoginScreen();
+        // loadLoginScreen();
     });
 
 }
