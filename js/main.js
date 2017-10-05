@@ -19,38 +19,47 @@ $(document).ready(function () {
                 loadHomeScreen();
             });
             this.get('#/overview', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadHomeScreen();
             });
 
             this.get('#/products', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadProductsComponent();
             });
 
             this.get('#/assets', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadAssetsComponent();
             });
 
 
             this.get('#/addProduct', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadAddProductComponent();
             });
 
             this.get('#/editProduct/:id', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadEditProductComponent();
             });
 
 
             this.get('#/manage', function (context) {
+                ga('send', 'pageview', location.hash);
                 window.location.hash = window.location.hash + "/properties";
             });
 
             this.get('#/manage/properties', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadManageComponent(loadManageProperties);
             });
             this.get('#/manage/properties/:id', function (context) {
+                ga('send', 'pageview', location.hash);
                 window.location.hash = window.location.hash + "/details";
             });
             this.get('#/manage/properties/:id/details', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadEditPropertyComponent({
                     id: context.params.id,
                     path: context.path.replace("details", ""),
@@ -58,6 +67,7 @@ $(document).ready(function () {
                 });
             });
             this.get('#/manage/properties/:id/translations', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadEditPropertyComponent({
                     id: context.params.id,
                     path: context.path.replace("translations", ""),
@@ -65,6 +75,7 @@ $(document).ready(function () {
                 });
             });
             this.get('#/manage/properties/:id/security', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadEditPropertyComponent({
                     id: context.params.id,
                     path: context.path.replace("security", ""),
@@ -72,6 +83,7 @@ $(document).ready(function () {
                 });
             });
             this.get('#/manage/properties/:id/history', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadEditPropertyComponent({
                     id: context.params.id,
                     path: context.path.replace("history", ""),
@@ -80,12 +92,15 @@ $(document).ready(function () {
             });
 
             this.get('#/manage/groups', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadManageComponent(loadManageGroups);
             });
             this.get('#/manage/groups/:id', function (context) {
+                ga('send', 'pageview', location.hash);
                 window.location.hash = window.location.hash + "/details";
             });
             this.get('#/manage/groups/:id/details', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadEditGroupComponent({
                     id: context.params.id,
                     path: context.path.replace("details", ""),
@@ -93,6 +108,7 @@ $(document).ready(function () {
                 });
             });
             this.get('#/manage/groups/:id/translations', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadEditGroupComponent({
                     id: context.params.id,
                     path: context.path.replace("translations", ""),
@@ -100,6 +116,7 @@ $(document).ready(function () {
                 });
             });
             this.get('#/manage/groups/:id/properties', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadEditGroupComponent({
                     id: context.params.id,
                     path: context.path.replace("properties", ""),
@@ -107,6 +124,7 @@ $(document).ready(function () {
                 });
             });
             this.get('#/manage/groups/:id/history', function (context) {
+                ga('send', 'pageview', location.hash);
                 loadEditGroupComponent({
                     id: context.params.id,
                     path: context.path.replace("history", ""),
